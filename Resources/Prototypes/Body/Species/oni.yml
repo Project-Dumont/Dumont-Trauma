@@ -4,7 +4,7 @@
   limits:
     enum.HumanoidVisualLayers.HeadTop:
       limit: 1
-      required: false
+      required: true
       default: [ OniHornAries ]
 
 - type: entity

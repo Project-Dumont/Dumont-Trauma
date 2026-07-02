@@ -234,6 +234,25 @@
   - barking
 
 - type: emote
+  id: Awoo
+  name: chat-emote-name-awoo
+  category: Vocal
+  icon: _Goobstation/Interface/Emotes/awoo.png
+  available: false
+  whitelist:
+    tags:
+    - VulpEmotes
+  blacklist:
+    tags:
+    - SiliconEmotes
+  chatMessages: ["chat-emote-msg-awoo"]
+  chatTriggers:
+  - awoo
+  - awoos
+  - awooing
+  - awooed
+
+- type: emote
   id: Snarl
   name: chat-emote-name-snarl
   category: Vocal

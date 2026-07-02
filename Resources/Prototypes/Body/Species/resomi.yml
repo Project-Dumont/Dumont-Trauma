@@ -7,11 +7,11 @@
       required: false
     enum.HumanoidVisualLayers.Head:
       limit: 1
-      required: false
+      required: true
       default: [ ResomiFluffHead ]
     enum.HumanoidVisualLayers.Tail:
       limit: 1
-      required: false
+      required: true
       default: [ ResomiTail ]
   appearances:
     enum.HumanoidVisualLayers.Tail:

@@ -7,11 +7,11 @@
       required: false
     enum.HumanoidVisualLayers.Tail:
       limit: 1
-      required: false
+      required: true
       default: [ TajaranTailAnim ]
     enum.HumanoidVisualLayers.HeadTop:
       limit: 2
-      required: false
+      required: true
       default: [ TajaranEarsBasic ]
   appearances:
     enum.HumanoidVisualLayers.Tail:

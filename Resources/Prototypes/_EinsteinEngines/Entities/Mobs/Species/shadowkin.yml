@@ -163,10 +163,6 @@
     - DoorBumpOpener
     - AnomalyHost
     - ShadowkinEmotes
-  - type: Respirator #Goob edit start - Lore Accurate Shadowkin superdense iron blood.
-    updateInterval: 6
-    maxSaturation: 30
-    saturation: 30 #Goob Edit end
 
 - type: entity
   save: false

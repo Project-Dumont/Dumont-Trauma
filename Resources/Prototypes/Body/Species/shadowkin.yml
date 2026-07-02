@@ -4,11 +4,11 @@
   limits:
     enum.HumanoidVisualLayers.Tail:
       limit: 1
-      required: false
+      required: true
       default: [ TailShadowkin ]
     enum.HumanoidVisualLayers.HeadTop:
       limit: 2
-      required: false
+      required: true
       default: [ EarsShadowkin ]
   appearances:
     enum.HumanoidVisualLayers.Tail:
