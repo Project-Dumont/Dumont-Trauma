@@ -1,0 +1,18 @@
+# SPDX-License-Identifier: AGPL-3.0-or-later
+
+- type: entity
+  parent: BaseIntellectualKnowledge
+  id: MagicalLiteracyKnowledge
+  name: Magical Literacy
+  components:
+  - type: Knowledge
+    experienceCost: 30
+    costs: [0, 2] # need to randomly roll MagicalGift to get more, or get a j*b/antag
+
+- type: entity
+  parent: BaseIntellectualKnowledge
+  id: LiteracyKnowledge
+  name: Literacy
+  components:
+  - type: Knowledge
+    experienceCost: 20

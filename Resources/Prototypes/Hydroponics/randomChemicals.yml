@@ -1,0 +1,188 @@
+- type: weightedRandomFillSolution
+  id: RandomPickBotanyReagent
+  fills:
+  - quantity: 5
+    weight: 0.5
+    reagents:
+    # <Trauma>
+    - Stimulants
+    - Nocturine
+    - Tranquility
+    - BingleJuice
+    - JuiceThatMakesYouHew
+    - Carpolin
+    - Aluite
+    - AmmoniatedMercury
+    - Rororium
+    - NanoMachines
+    - BlackPowder
+    - PolytrinicAcid
+    # </Trauma>
+    - Omnizine
+    - Impedrezene
+    - Fresium
+    - HeartbreakerToxin
+    - Honk
+    - BuzzochloricBees
+  - quantity: 5
+    weight: 1
+    reagents:
+    # <Trauma>
+    - Genecide
+    - Fentanyl
+    - Anacea
+    - Hemorrhinol
+    - Tirizene
+    - Hercuri
+    - GreyMatter
+    - Atropine
+    - Herignis
+    - Lipozine
+    - Fluorosurfactant
+    # </Trauma>
+    - Cognizine
+    - Toxin
+    - Leporazine
+    - Epinephrine
+    - CarpoToxin
+    - SulfuricAcid
+    - Licoxide
+    - Napalm
+    - ChlorineTrifluoride
+    - Radium
+    - Gold
+    - Uranium
+    - Phosphorus
+    - AtomicBomb
+    - Neurotoxin
+    - ChangelingSting
+    - CogChamp
+    - JuiceThatMakesYouWeh
+    - TearGas
+    - Lipolicide
+    - Benzene
+  - quantity: 5
+    weight: 2
+    reagents:
+    # <Trauma>
+    - Ibuprofen
+    - Tilenol
+    - Morphine
+    - Multiver
+    - Bozaide
+    - Musiver
+    - Tramadol
+    - Microplastics
+    # </Trauma>
+    - Desoxyephedrine
+    - ChloralHydrate
+    - Ipecac
+    - Hyronalin
+    - Pax
+    - Cryoxadone
+    - Ethylredoxrazine
+    - Dylovene
+    - Histamine
+    - Blood
+    - WeldingFuel
+    - Mercury
+    - Silver
+    - Phenol
+    - Ultravasculine
+    - Carbon
+    - THC
+    - Nicotine
+    - DoctorsDelight
+    - IceCream
+    - Cola
+    - Diphenhydramine
+    - Iron
+    - Bleach
+    - Mannitol
+  - quantity: 10
+    weight: 3
+    reagents:
+    # <Trauma>
+    - Tirimol
+    - Probital
+    - Mold
+    - Cement
+    # </Trauma>
+    - Bicaridine
+    - Dermaline
+    - Ephedrine
+    - NorepinephricAcid
+    - Tricordrazine
+    - Saline
+    - PulpedBananaPeel
+    - Cryptobiolin
+    - EZNutrient
+    - Ammonia
+    - RobustHarvest
+    - SpaceLube
+    - Theobromine
+    - Allicin
+    - Acetone
+    - Ash
+    - SodiumCarbonate
+    - SpaceDrugs
+    - SpaceGlue
+    - JuiceBerryPoison
+    - Pilk
+    - Posca
+    - Ethanol
+    - FourteenLoko
+    - LemonLime
+    - LemonLimeCranberry
+    - Enzyme
+    - Vinegar
+    - Potassium
+    - Fluorine
+    - Aluminium
+    - Wine
+    - Coffee
+    - Beer
+  - quantity: 10
+    weight: 3.5
+    reagents:
+    # <Trauma>
+    - Nutriment
+    # <Trauma>
+    - Vitamin
+    - Kelotane
+    - Inaprovaline
+    - Oil
+    - Slime
+    - Fiber
+    - Water
+    - Sugar
+    - Cream
+    - SodaWater
+    - Ice
+    - JuiceCarrot
+    - Protein
+    - Flour
+    - Soysauce
+    - TableSalt
+    - Chlorine
+    - Mercury
+
+- type: weightedRandomFillSolution
+  id: EvilRandomFillSolution
+  fills:
+  - quantity: 0.25 # Trauma - was 0.05
+    weight: 40
+    reagents:
+    - Nocturine
+    - MuteToxin
+    - Lead
+  - quantity: 0.2 # Trauma - Was 0.1
+    weight: 5 # 99.9% chance of appearing at least once with 60u of vestine with an average of 6.5 occurances.
+    reagents:
+    - Vestine
+  - quantity: 3.0 # Trauma - was 1.0
+    weight: 1
+    reagents:
+    - Tazinide
+    - Stimulants
+    - Lexorin

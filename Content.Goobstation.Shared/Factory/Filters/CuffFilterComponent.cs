@@ -1,0 +1,10 @@
+// SPDX-License-Identifier: AGPL-3.0-or-later
+
+
+namespace Content.Goobstation.Shared.Factory.Filters;
+
+/// <summary>
+/// Filter that requires a cuffable entity, and allows it if <c>IsCuffed() == ItemToggleComponent.Activated</c>.
+/// </summary>
+[RegisterComponent, NetworkedComponent]
+public sealed partial class CuffFilterComponent : Component;

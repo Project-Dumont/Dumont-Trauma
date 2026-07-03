@@ -1,0 +1,112 @@
+// SPDX-License-Identifier: AGPL-3.0-or-later
+
+using Content.Shared.Hands.EntitySystems;
+using Content.Shared.Throwing;
+using Robust.Shared.Physics.Components;
+using Robust.Shared.Physics.Systems;
+using Robust.Shared.Map;
+
+namespace Content.Goobstation.Shared.Boomerang;
+
+public sealed partial class BoomerangSystem : EntitySystem
+{
+    [Dependency] private ThrowingSystem _throwingSystem = default!;
+    [Dependency] private SharedTransformSystem _transform = default!;
+    [Dependency] private SharedPhysicsSystem _physics = default!;
+    [Dependency] private SharedHandsSystem _handsSystem = default!;
+
+    private List<(EntityUid, EntityCoordinates, float, EntityUid?)> _toThrow = new();
+
+    public override void Initialize()
+    {
+        base.Initialize();
+        SubscribeLocalEvent<BoomerangComponent, LandEvent>(OnLanded);
+        SubscribeLocalEvent<BoomerangComponent, ThrownEvent>(OnThrown);
+        SubscribeLocalEvent<BoomerangComponent, ThrowDoHitEvent>(OnHit);
+    }
+
+    private void OnHit(Entity<BoomerangComponent> ent, ref ThrowDoHitEvent args)
+    {
+        if (!TryComp(args.Thrown, out PhysicsComponent? body) || args.Component.Thrower is not { } thrower)
+            return;
+
+        var ourCoords = _transform.GetMapCoordinates(args.Thrown);
+        var throwerCoords = _transform.GetMapCoordinates(thrower);
+
+        if (ourCoords.MapId != throwerCoords.MapId)
+            return;
+
+        var vec = (throwerCoords.Position - ourCoords.Position).Normalized() * body.LinearVelocity.Length();
+
+        _physics.SetLinearVelocity(args.Thrown, vec, body: body);
+    }
+
+    public override void Update(float frameTime)
+    {
+        base.Update(frameTime);
+
+        foreach (var (uid, coords, speed, thrower) in _toThrow)
+        {
+            if (TerminatingOrDeleted(uid) || thrower != null && TerminatingOrDeleted(thrower))
+                continue;
+
+            _physics.SetLinearVelocity(uid, Vector2.Zero);
+            _throwingSystem.TryThrow(uid, coords, speed, user: thrower, recoil: false, playSound: false);
+        }
+
+        _toThrow.Clear();
+    }
+
+    private void OnThrown(Entity<BoomerangComponent> ent, ref ThrownEvent args)
+    {
+        if (ent.Comp.Thrower == null)
+            SetThrower(ent, args.User);
+    }
+
+    private void OnLanded(Entity<BoomerangComponent> ent, ref LandEvent args)
+    {
+        if (ent.Comp.Thrower == null)
+            return;
+
+        var thrower = ent.Comp.Thrower.Value;
+
+        if (TerminatingOrDeleted(thrower) || ent.Comp.CurrentHops >= ent.Comp.MaxHops)
+        {
+            SetThrower(ent, null);
+            return;
+        }
+
+        var xform = Transform(ent);
+        var throwerXform = Transform(thrower);
+
+        if (!xform.Coordinates.TryDistance(EntityManager, throwerXform.Coordinates, out var distance))
+        {
+            SetThrower(ent, null);
+            return;
+        }
+
+        if (distance < ent.Comp.PickupDistance)
+        {
+            // if we fail to pick up throw with no user so it can hit you
+            if (!_handsSystem.TryPickup(thrower, ent))
+                _toThrow.Add((ent, throwerXform.Coordinates, ent.Comp.ReturnSpeed, null));
+
+            SetThrower(ent, null); // don't throw it anymore
+            return;
+        }
+
+        // everything is fine and it's out-of-range, re-throw to thrower on next frame (or it breaks)
+        _toThrow.Add((ent, throwerXform.Coordinates, ent.Comp.ReturnSpeed, thrower));
+        ent.Comp.CurrentHops++;
+    }
+
+    /// <summary>
+    /// Sets the entity a boomerang should return to and resets the hops counter
+    /// </summary>
+    public void SetThrower(Entity<BoomerangComponent> ent, EntityUid? newThrower)
+    {
+        ent.Comp.Thrower = newThrower;
+        ent.Comp.CurrentHops = 0;
+        Dirty(ent);
+    }
+}

@@ -1,0 +1,20 @@
+// SPDX-License-Identifier: AGPL-3.0-or-later
+
+using Content.Medical.Common.Surgery.Tools;
+
+namespace Content.Goobstation.Shared.Surgery.Steps.Parts;
+
+/// <summary>
+/// Component for xeno tissue sample, used in the graft issue surgery step.
+/// </summary>
+[RegisterComponent, NetworkedComponent]
+public sealed partial class TissueSampleComponent : Component, ISurgeryToolComponent
+{
+    public string ToolName => "a xeno tissue sample";
+
+    [DataField]
+    public bool? Used { get; set; } = true;
+
+    [DataField]
+    public float Speed { get; set; } = 1f;
+}

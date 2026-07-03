@@ -1,0 +1,103 @@
+using System.Diagnostics;
+using System.IO.Compression;
+using Robust.Packaging;
+using Robust.Packaging.AssetProcessing;
+using Robust.Packaging.AssetProcessing.Passes;
+using Robust.Packaging.Utility;
+using Robust.Shared.Timing;
+
+namespace Content.Packaging;
+
+public static class ClientPackaging
+{
+    /// <summary>
+    /// Be advised this can be called from server packaging during a HybridACZ build.
+    /// </summary>
+    public static async Task PackageClient(bool skipBuild, bool logBuild, string configuration, IPackageLogger logger)
+    {
+        logger.Info("Building client...");
+
+        if (!skipBuild)
+        {
+            var startInfo = new ProcessStartInfo
+            {
+                FileName = "dotnet",
+                ArgumentList =
+                {
+                    "build",
+                    Path.Combine("Content.Trauma.Client", "Content.Trauma.Client.csproj"), // Trauma - Trauma.Client depends on everything
+                    "-c", configuration,
+                    "--nologo",
+                    "/v:m",
+                    "/t:Rebuild",
+                    "/p:FullRelease=true",
+                    "/m"
+                }
+            };
+
+            if (logBuild)
+            {
+                startInfo.ArgumentList.Add($"/bl:{Path.Combine("release", "client.binlog")}");
+                startInfo.ArgumentList.Add("/p:ReportAnalyzer=true");
+            }
+
+            await ProcessHelpers.RunCheck(startInfo);
+        }
+
+        logger.Info("Packaging client...");
+
+        var sw = RStopwatch.StartNew();
+        {
+            await using var zipFile =
+                File.Open(Path.Combine("release", "SS14.Client.zip"), FileMode.Create, FileAccess.ReadWrite);
+            using var zip = new ZipArchive(zipFile, ZipArchiveMode.Update);
+            var writer = new AssetPassZipWriter(zip);
+
+            await WriteResources("", writer, logger, default);
+            await writer.FinishedTask;
+        }
+
+        logger.Info($"Finished packaging client in {sw.Elapsed}");
+    }
+
+    public static async Task WriteResources(
+        string contentDir,
+        AssetPass pass,
+        IPackageLogger logger,
+        CancellationToken cancel)
+    {
+        var graph = new RobustClientAssetGraph();
+        pass.Dependencies.Add(new AssetPassDependency(graph.Output.Name));
+
+        var dropSvgPass = new AssetPassFilterDrop(f => f.Path.EndsWith(".svg"))
+        {
+            Name = "DropSvgPass",
+        };
+        dropSvgPass.AddDependency(graph.Input).AddBefore(graph.PresetPasses);
+
+        AssetGraph.CalculateGraph([pass, dropSvgPass, ..graph.AllPasses], logger);
+
+        var inputPass = graph.Input;
+
+        // <Trauma> - use DepsHandler instead of manually writing assemblies
+        var sourcePath = Path.Combine(contentDir, "bin", "Content.Client");
+        var deps = DepsHandler.Load(Path.Combine(sourcePath, "Content.Trauma.Client.deps.json"));
+        var contentAssemblies = ServerPackaging.GetContentAssemblyNamesToCopy(deps, "Client");
+        // </Trauma>
+
+        await RobustSharedPackaging.WriteContentAssemblies(
+            inputPass,
+            contentDir,
+            "Content.Client",
+            contentAssemblies, // Trauma - use DepsHandler above
+            cancel: cancel);
+
+        await RobustClientPackaging.WriteClientResources(
+            contentDir,
+            inputPass,
+            SharedPackaging.AdditionalIgnoredResources,
+            cancel);
+
+        inputPass.InjectFinished();
+    }
+}

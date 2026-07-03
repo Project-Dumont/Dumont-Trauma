@@ -1,0 +1,108 @@
+- type: construction
+  id: WallWeb
+  graph: WebStructures
+  startNode: start
+  targetNode: wall
+  category: construction-category-structures
+  objectType: Structure
+  placementMode: SnapgridCenter
+  canRotate: false
+  canBuildInImpassable: false
+  conditions:
+    - !type:TileNotBlocked
+  # <Trauma>
+  theory:
+    SpiderCraftKnowledge: 0
+  practical:
+    TailoringKnowledge: 2
+  useQuality: false
+  # </Trauma>
+
+- type: construction
+  id: TableWeb
+  graph: WebStructures
+  startNode: start
+  targetNode: table
+  category: construction-category-furniture
+  objectType: Structure
+  placementMode: SnapgridCenter
+  canRotate: false
+  canBuildInImpassable: false
+  conditions:
+    - !type:TileNotBlocked
+  # <Trauma>
+  theory:
+    SpiderCraftKnowledge: 0
+  practical:
+    TailoringKnowledge: 2
+  # </Trauma>
+
+- type: construction
+  id: WebBed
+  graph: WebStructures
+  startNode: start
+  targetNode: bed
+  category: construction-category-furniture
+  objectType: Structure
+  placementMode: SnapgridCenter
+  canRotate: false
+  canBuildInImpassable: false
+  conditions:
+    - !type:TileNotBlocked
+  # <Trauma>
+  theory:
+    SpiderCraftKnowledge: 0
+  practical:
+    TailoringKnowledge: 2
+  # </Trauma>
+
+- type: construction
+  id: ChairWeb
+  graph: WebStructures
+  startNode: start
+  targetNode: chair
+  category: construction-category-furniture
+  objectType: Structure
+  placementMode: SnapgridCenter
+  canBuildInImpassable: false
+  # <Trauma>
+  theory:
+    SpiderCraftKnowledge: 0
+  practical:
+    TailoringKnowledge: 2
+  # </Trauma>
+
+- type: construction
+  id: CrateWeb
+  graph: WebStructures
+  startNode: start
+  targetNode: crate
+  category: construction-category-storage
+  objectType: Structure
+  placementMode: SnapgridCenter
+  canRotate: false
+  canBuildInImpassable: false
+  # <Trauma>
+  theory:
+    SpiderCraftKnowledge: 0
+  practical:
+    TailoringKnowledge: 2
+  # </Trauma>
+
+- type: construction
+  id: WebDoor
+  graph: WebStructures
+  startNode: start
+  targetNode: door
+  category: construction-category-structures
+  objectType: Structure
+  placementMode: SnapgridCenter
+  canBuildInImpassable: false
+  conditions:
+    - !type:TileNotBlocked
+  # <Trauma>
+  theory:
+    SpiderCraftKnowledge: 0
+  practical:
+    TailoringKnowledge: 2
+  # </Trauma>

@@ -1,0 +1,41 @@
+- type: construction
+  id: PowerCellPotato
+  graph: PowerCellPotato
+  startNode: start
+  targetNode: potatobattery
+  category: construction-category-misc
+  objectType: Item
+  # <Trauma>
+  theory:
+    FabricationKnowledge: 0
+  practical:
+    ElectronicsKnowledge: 1
+  # </Trauma>
+
+- type: construction
+  id: PotatoAI
+  graph: PotatoAI
+  startNode: start
+  targetNode: potatoai
+  category: construction-category-misc
+  objectType: Item
+  # <Trauma>
+  theory:
+    FabricationKnowledge: 0
+  practical:
+    ElectronicsKnowledge: 2
+  # </Trauma>
+
+- type: construction
+  id: PotatoAIChip
+  graph: PotatoAIChip
+  startNode: start
+  targetNode: potatoaichip
+  category: construction-category-misc
+  objectType: Item
+  # <Trauma>
+  theory:
+    FabricationKnowledge: 0
+  practical:
+    ElectronicsKnowledge: 3
+  # </Trauma>

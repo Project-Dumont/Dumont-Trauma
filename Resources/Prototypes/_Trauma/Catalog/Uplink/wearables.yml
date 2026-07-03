@@ -1,0 +1,35 @@
+# SPDX-License-Identifier: AGPL-3.0-or-later
+
+- type: listing
+  id: UplinkHolster
+  name: uplink-holster-name
+  description: uplink-holster-desc
+  productEntity: ClothingBeltSyndieHolster
+  cost:
+    Telecrystal: 8
+  categories:
+  - UplinkWearables
+
+- type: listing
+  id: UplinkGuerrillaGloves
+  name: uplink-guerrilla-name
+  description: uplink-guerrilla-desc
+  productEntity: ClothingHandsGlovesGuerrilla
+  cost:
+    Telecrystal: 20
+  categories:
+  - UplinkWearables
+
+- type: listing
+  id: UplinkMonarchCoat
+  name: uplink-monarch-name
+  description: uplink-monarch-desc
+  productEntity: ClothingOuterArmorMonarchCoat
+  cost:
+    Telecrystal: 40
+  categories:
+  - UplinkWearables
+  conditions:
+  - !type:BuyerSpeciesCondition
+    whitelist:
+    - Human

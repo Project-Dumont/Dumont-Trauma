@@ -1,0 +1,159 @@
+- type: construction
+  id: Computer
+  graph: Computer
+  startNode: start
+  targetNode: computer
+  category: construction-category-machines
+  placementMode: SnapgridCenter
+  canBuildInImpassable: false
+  # <Trauma>
+  theory:
+    ElectronicsKnowledge: 0
+  practical:
+    ElectronicsKnowledge: 1
+  # </Trauma>
+
+- type: construction
+  id: MachineFrame
+  graph: Machine
+  startNode: start
+  targetNode: machine
+  category: construction-category-machines
+  placementMode: SnapgridCenter
+  canBuildInImpassable: false
+  # <Trauma>
+  theory:
+    ElectronicsKnowledge: 0
+  practical:
+    MechanicsKnowledge: 1
+  # </Trauma>
+
+# Switching
+- type: construction
+  id: TwoWayLeverRecipe
+  graph: LeverGraph
+  startNode: start
+  targetNode: LeverNode
+  category: construction-category-machines
+  objectType: Structure
+  canBuildInImpassable: false
+  conditions:
+    - !type:TileNotBlocked
+  # <Trauma>
+  theory:
+    ElectronicsKnowledge: 0
+  useQuality: false
+  # </Trauma>
+
+- type: construction
+  id: LightSwitchRecipe
+  graph: LightSwitchGraph
+  startNode: start
+  targetNode: LightSwitchNode
+  category: construction-category-machines
+  objectType: Structure
+  placementMode: SnapgridCenter
+  canRotate: true
+  canBuildInImpassable: true
+  conditions:
+    - !type:WallmountCondition
+  hide: true #TODO: Fix the lightswitch, issue #34659. Until then, keep hidden so people don't build it and get confused.
+  # <Trauma>
+  theory:
+    ElectronicsKnowledge: 0
+  useQuality: false
+  # </Trauma>
+
+- type: construction
+  id: SignalSwitchRecipe
+  graph: SignalSwitchGraph
+  startNode: start
+  targetNode: SignalSwitchNode
+  category: construction-category-machines
+  objectType: Structure
+  placementMode: SnapgridCenter
+  canRotate: true
+  canBuildInImpassable: true
+  conditions:
+    - !type:WallmountCondition
+  # <Trauma>
+  theory:
+    ElectronicsKnowledge: 0
+  useQuality: false
+  # </Trauma>
+
+- type: construction
+  id: SignalButtonRecipe
+  graph: SignalButtonGraph
+  startNode: start
+  targetNode: SignalButtonNode
+  category: construction-category-machines
+  objectType: Structure
+  placementMode: SnapgridCenter
+  canRotate: true
+  canBuildInImpassable: true
+  conditions:
+    - !type:WallmountCondition
+  # <Trauma>
+  theory:
+    ElectronicsKnowledge: 0 # most basic signal source
+  useQuality: false
+  # </Trauma>
+
+- type: construction
+  id: LightSwitchDirectionalRecipe
+  name: construction-recipe-light-switch-directional
+  graph: LightSwitchDirectionalGraph
+  startNode: start
+  targetNode: LightSwitchDirectionalNode
+  category: construction-category-machines
+  objectType: Structure
+  placementMode: SnapgridCenter
+  canRotate: true
+  canBuildInImpassable: true
+  conditions:
+    - !type:WallmountCondition
+  hide: true #TODO: Fix the lightswitch, issue #34659. Until then, keep hidden so people don't build it and get confused.
+  # <Trauma>
+  theory:
+    ElectronicsKnowledge: 1
+  useQuality: false
+  # </Trauma>
+
+- type: construction
+  id: SignalSwitchDirectionalRecipe
+  name: construction-recipe-signal-switch-directional
+  graph: SignalSwitchDirectionalGraph
+  startNode: start
+  targetNode: SignalSwitchDirectionalNode
+  category: construction-category-machines
+  objectType: Structure
+  placementMode: SnapgridCenter
+  canRotate: true
+  canBuildInImpassable: true
+  conditions:
+    - !type:WallmountCondition
+  # <Trauma>
+  theory:
+    ElectronicsKnowledge: 1
+  useQuality: false
+  # </Trauma>
+
+- type: construction
+  id: SignalButtonDirectionalRecipe
+  name: construction-recipe-signal-button-directional
+  graph: SignalButtonDirectionalGraph
+  startNode: start
+  targetNode: SignalButtonDirectionalNode
+  category: construction-category-machines
+  objectType: Structure
+  placementMode: SnapgridCenter
+  canRotate: true
+  canBuildInImpassable: true
+  conditions:
+    - !type:WallmountCondition
+  # <Trauma>
+  theory:
+    ElectronicsKnowledge: 0
+  useQuality: false
+  # </Trauma>

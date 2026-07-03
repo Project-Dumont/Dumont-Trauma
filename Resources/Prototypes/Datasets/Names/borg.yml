@@ -1,0 +1,6 @@
+# only used roundstart, names can be changed after
+- type: localizedDataset
+  id: NamesBorg
+  values:
+    prefix: names-borg-dataset-
+    count: 46 # Trauma - was 43, 3 extra
