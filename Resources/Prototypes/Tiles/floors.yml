@@ -1,13 +1,12 @@
 - type: tile
-  abstract: true
   id: BaseStationTile
+  abstract: true
   isSubfloor: false
   deconstructTools: [ Prying ]
   footstepSounds:
     collection: FootstepFloor
   heatCapacity: 10000
   tileRipResistance: 4500 # Goob
-  weather: false
   baseTurf: Plating
   baseWhitelist:
   - PlatingBrass
@@ -31,87 +30,137 @@
   id: FloorSteel
   parent: BaseStationTile
   name: tiles-steel-floor
-  sprite: /Textures/_Trauma/Tiles/steel.png # Trauma
+  sprite: /Textures/Tiles/steel.png
   variants: 4
+  placementVariants:
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
   itemDrop: FloorTileItemSteel
 
 - type: tile
   id: FloorSteelCheckerLight
   parent: BaseStationTile
   name: tiles-steel-floor-checker-light
-  sprite: /Textures/_Trauma/Tiles/cafeteria.png # Trauma
+  sprite: /Textures/Tiles/cafeteria.png
   variants: 4
+  placementVariants:
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
   itemDrop: FloorTileItemSteelCheckerLight
 
 - type: tile
   id: FloorSteelCheckerDark
   parent: BaseStationTile
   name: tiles-steel-floor-checker-dark
-  sprite: /Textures/_Trauma/Tiles/checker_dark.png # Trauma
+  sprite: /Textures/Tiles/checker_dark.png
   variants: 4
+  placementVariants:
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
   itemDrop: FloorTileItemSteelCheckerDark
 
 - type: tile
   id: FloorSteelMini
   parent: BaseStationTile
   name: tiles-steel-floor-mini
-  sprite: /Textures/_Trauma/Tiles/steel_mini.png # Trauma
+  sprite: /Textures/Tiles/steel_mini.png
   variants: 4
+  placementVariants:
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
   itemDrop: FloorTileItemSteelMini
 
 - type: tile
   id: FloorSteelPavement
   parent: BaseStationTile
   name: tiles-steel-floor-pavement
-  sprite: /Textures/_Trauma/Tiles/steel_pavement.png # Trauma
+  sprite: /Textures/Tiles/steel_pavement.png
   variants: 4
+  placementVariants:
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
   itemDrop: FloorTileItemSteelPavement
 
 - type: tile
   id: FloorSteelDiagonal
   parent: BaseStationTile
   name: tiles-steel-floor-diagonal
-  sprite: /Textures/_Trauma/Tiles/steel_diagonal.png # Trauma
+  sprite: /Textures/Tiles/steel_diagonal.png
   variants: 4
+  placementVariants:
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
   itemDrop: FloorTileItemSteelDiagonal
 
 - type: tile
   id: FloorSteelOffset
   parent: BaseStationTile
   name: tiles-steel-floor-offset
-  sprite: /Textures/_Trauma/Tiles/steel_offset.png # Trauma
+  sprite: /Textures/Tiles/steel_offset.png
   itemDrop: FloorTileItemSteelOffset
 
 - type: tile
   id: FloorSteelMono
   parent: BaseStationTile
   name: tiles-steel-floor-mono
-  sprite: /Textures/_Trauma/Tiles/steel_mono.png # Trauma
+  sprite: /Textures/Tiles/steel_mono.png
   variants: 4
+  placementVariants:
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
   itemDrop: FloorTileItemSteelMono
 
 - type: tile
   id: FloorSteelPavementVertical
   parent: BaseStationTile
   name: tiles-steel-floor-pavement-vertical
-  sprite: /Textures/_Trauma/Tiles/steel_pavement_vertical.png # Trauma
+  sprite: /Textures/Tiles/steel_pavement_vertical.png
   variants: 4
+  placementVariants:
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
   itemDrop: FloorTileItemSteelPavementVertical
 
 - type: tile
   id: FloorSteelHerringbone
   parent: BaseStationTile
   name: tiles-steel-floor-herringbone
-  sprite: /Textures/_Trauma/Tiles/steel_herringbone.png # Trauma
+  sprite: /Textures/Tiles/steel_herringbone.png
   variants: 4
+  placementVariants:
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
   itemDrop: FloorTileItemSteelHerringbone
 
 - type: tile
   id: FloorSteelDiagonalMini
   parent: BaseStationTile
   name: tiles-steel-floor-diagonal-mini
-  sprite: /Textures/_Trauma/Tiles/steel_diagonal_mini.png # Trauma
+  sprite: /Textures/Tiles/steel_diagonal_mini.png
   variants: 4
+  placementVariants:
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
   itemDrop: FloorTileItemSteelDiagonalMini
 
 - type: tile
@@ -120,6 +169,11 @@
   name: tiles-steel-floor-slats-continuous
   sprite: /Textures/Tiles/steel_slats_continuous.png
   variants: 4
+  placementVariants:
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
   itemDrop: FloorTileItemSteelSlatsContinuous
   allowRotationMirror: true
 
@@ -129,6 +183,11 @@
   name: tiles-steel-floor-vertical-slats-bordered
   sprite: /Textures/Tiles/steel_vertical_slats_bordered.png
   variants: 4
+  placementVariants:
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
   itemDrop: FloorTileItemSteelVerticalSlatsBordered
 
 - type: tile
@@ -137,6 +196,11 @@
   name: tiles-steel-floor-horizontal-slats-bordered
   sprite: /Textures/Tiles/steel_horizontal_slats_bordered.png
   variants: 4
+  placementVariants:
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
   itemDrop: FloorTileItemSteelHorizontalSlatsBordered
 
 - type: tile
@@ -161,45 +225,65 @@
   id: FloorPlastic
   parent: BaseStationTile
   name: tiles-plastic-floor
-  sprite: /Textures/_Trauma/Tiles/plastic.png # Trauma
+  sprite: /Textures/Tiles/plastic.png
   variants: 4
-  itemDrop: FloorTileItemPlastic # Trauma - plastic tile items
-  tileRipResistance: 80 # Trauma
+  placementVariants:
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+  itemDrop: FloorTileItemPlastic - plastic tile items
+  tileRipResistance: 80 # Goob
 
 - type: tile
   id: FloorWood
   parent: BaseStationTile
   name: tiles-wood
-  sprite: /Textures/_Trauma/Tiles/wood.png # Trauma
+  sprite: /Textures/Tiles/wood.png
   variants: 4
+  placementVariants:
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
   footstepSounds:
     collection: FootstepWood
   barestepSounds:
     collection: BarestepWood
   itemDrop: FloorTileItemWood
-  tileRipResistance: 80 # Trauma
+  tileRipResistance: 80 # Goob
 
 - type: tile
   id: FloorWhite
   parent: BaseStationTile
   name: tiles-white-floor
-  sprite: /Textures/_Trauma/Tiles/white.png # Trauma
+  sprite: /Textures/Tiles/white.png
   variants: 4
+  placementVariants:
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
   footstepSounds:
     collection: FootstepTile
   itemDrop: FloorTileItemWhite
-  tileRipResistance: 80 # Trauma
+  tileRipResistance: 80 # Goob
 
 - type: tile
   id: FloorWhiteMini
   parent: BaseStationTile
   name: tiles-white-floor-mini
-  sprite: /Textures/_Trauma/Tiles/white_mini.png # Trauma
+  sprite: /Textures/Tiles/white_mini.png
   variants: 4
+  placementVariants:
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
   footstepSounds:
     collection: FootstepTile
   itemDrop: FloorTileItemWhiteMini
-  tileRipResistance: 80 # Trauma
+  tileRipResistance: 80 # Goob
 
 - type: tile
   parent: BaseStationTile
@@ -207,6 +291,11 @@
   name: tiles-white-floor-slats-continuous
   sprite: /Textures/Tiles/white_slats_continuous.png
   variants: 4
+  placementVariants:
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
   itemDrop: FloorTileItemWhiteSlatsContinuous
   allowRotationMirror: true
 
@@ -216,6 +305,11 @@
   name: tiles-white-floor-vertical-slats-bordered
   sprite: /Textures/Tiles/white_vertical_slats_bordered.png
   variants: 4
+  placementVariants:
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
   itemDrop: FloorTileItemWhiteVerticalSlatsBordered
 
 - type: tile
@@ -224,14 +318,24 @@
   name: tiles-white-floor-horizontal-slats-bordered
   sprite: /Textures/Tiles/white_horizontal_slats_bordered.png
   variants: 4
+  placementVariants:
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
   itemDrop: FloorTileItemWhiteHorizontalSlatsBordered
 
 - type: tile
   id: FloorWhitePavement
   parent: BaseStationTile
   name: tiles-white-floor-pavement
-  sprite: /Textures/_Trauma/Tiles/white_pavement.png # Trauma
+  sprite: /Textures/Tiles/white_pavement.png
   variants: 4
+  placementVariants:
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
   footstepSounds:
     collection: FootstepTile
   itemDrop: FloorTileItemWhitePavement
@@ -241,8 +345,13 @@
   id: FloorWhiteDiagonal
   parent: BaseStationTile
   name: tiles-white-floor-diagonal
-  sprite: /Textures/_Trauma/Tiles/white_diagonal.png # Trauma
+  sprite: /Textures/Tiles/white_diagonal.png
   variants: 4
+  placementVariants:
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
   footstepSounds:
     collection: FootstepTile
   itemDrop: FloorTileItemWhiteDiagonal
@@ -252,7 +361,7 @@
   id: FloorWhiteOffset
   parent: BaseStationTile
   name: tiles-white-floor-offset
-  sprite: /Textures/_Trauma/Tiles/white_offset.png # Trauma
+  sprite: /Textures/Tiles/white_offset.png
   footstepSounds:
     collection: FootstepTile
   itemDrop: FloorTileItemWhiteOffset
@@ -262,8 +371,13 @@
   id: FloorWhiteMono
   parent: BaseStationTile
   name: tiles-white-floor-mono
-  sprite: /Textures/_Trauma/Tiles/white_mono.png # Trauma
+  sprite: /Textures/Tiles/white_mono.png
   variants: 4
+  placementVariants:
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
   footstepSounds:
     collection: FootstepTile
   itemDrop: FloorTileItemWhiteMono
@@ -273,8 +387,13 @@
   id: FloorWhitePavementVertical
   parent: BaseStationTile
   name: tiles-white-floor-pavement-vertical
-  sprite: /Textures/_Trauma/Tiles/white_pavement_vertical.png # Trauma
+  sprite: /Textures/Tiles/white_pavement_vertical.png
   variants: 4
+  placementVariants:
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
   footstepSounds:
     collection: FootstepTile
   itemDrop: FloorTileItemWhitePavementVertical
@@ -284,8 +403,13 @@
   id: FloorWhiteHerringbone
   parent: BaseStationTile
   name: tiles-white-floor-herringbone
-  sprite: /Textures/_Trauma/Tiles/white_herringbone.png # Trauma
+  sprite: /Textures/Tiles/white_herringbone.png
   variants: 4
+  placementVariants:
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
   footstepSounds:
     collection: FootstepTile
   itemDrop: FloorTileItemWhiteHerringbone
@@ -295,8 +419,13 @@
   id: FloorWhiteDiagonalMini
   parent: BaseStationTile
   name: tiles-white-floor-diagonal-mini
-  sprite: /Textures/_Trauma/Tiles/white_diagonal_mini.png # Trauma
+  sprite: /Textures/Tiles/white_diagonal_mini.png
   variants: 4
+  placementVariants:
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
   footstepSounds:
     collection: FootstepTile
   itemDrop: FloorTileItemWhiteDiagonalMini
@@ -306,19 +435,29 @@
   id: FloorWhitePlastic
   parent: BaseStationTile
   name: tiles-plastic-white-floor
-  sprite: /Textures/_Trauma/Tiles/white_plastic.png # Trauma
+  sprite: /Textures/Tiles/white_plastic.png
   variants: 4
+  placementVariants:
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
   footstepSounds:
     collection: FootstepTile
-  itemDrop: FloorTileItemPlasticWhite # Trauma - plastic tile items
+  itemDrop: FloorTileItemPlasticWhite - plastic tile items
   tileRipResistance: 80 # Goob
 
 - type: tile
   id: FloorDark
   parent: BaseStationTile
   name: tiles-dark-floor
-  sprite: /Textures/_Trauma/Tiles/dark.png # Trauma
+  sprite: /Textures/Tiles/dark.png
   variants: 4
+  placementVariants:
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
   footstepSounds:
     collection: FootstepTile
   itemDrop: FloorTileItemDark
@@ -327,8 +466,13 @@
   id: FloorDarkMini
   parent: BaseStationTile
   name: tiles-dark-floor-mini
-  sprite: /Textures/_Trauma/Tiles/dark_mini.png # Trauma
+  sprite: /Textures/Tiles/dark_mini.png
   variants: 4
+  placementVariants:
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
   footstepSounds:
     collection: FootstepTile
   itemDrop: FloorTileItemDarkMini
@@ -340,6 +484,11 @@
   name: tiles-dark-floor-slats-continuous
   sprite: /Textures/Tiles/dark_slats_continuous.png
   variants: 4
+  placementVariants:
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
   itemDrop: FloorTileItemDarkSlatsContinuous
   allowRotationMirror: true
 
@@ -349,6 +498,11 @@
   name: tiles-dark-floor-vertical-slats-bordered
   sprite: /Textures/Tiles/dark_vertical_slats_bordered.png
   variants: 4
+  placementVariants:
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
   itemDrop: FloorTileItemDarkVerticalSlatsBordered
 
 - type: tile
@@ -357,14 +511,24 @@
   name: tiles-dark-floor-horizontal-slats-bordered
   sprite: /Textures/Tiles/dark_horizontal_slats_bordered.png
   variants: 4
+  placementVariants:
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
   itemDrop: FloorTileItemDarkHorizontalSlatsBordered
 
 - type: tile
   id: FloorDarkPavement
   parent: BaseStationTile
   name: tiles-dark-floor-pavement
-  sprite: /Textures/_Trauma/Tiles/dark_pavement.png # Trauma
+  sprite: /Textures/Tiles/dark_pavement.png
   variants: 4
+  placementVariants:
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
   footstepSounds:
     collection: FootstepTile
   itemDrop: FloorTileItemDarkPavement
@@ -374,8 +538,13 @@
   id: FloorDarkDiagonal
   parent: BaseStationTile
   name: tiles-dark-floor-diagonal
-  sprite: /Textures/_Trauma/Tiles/dark_diagonal.png # Trauma
+  sprite: /Textures/Tiles/dark_diagonal.png
   variants: 4
+  placementVariants:
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
   footstepSounds:
     collection: FootstepTile
   itemDrop: FloorTileItemDarkDiagonal
@@ -395,8 +564,13 @@
   id: FloorDarkMono
   parent: BaseStationTile
   name: tiles-dark-floor-mono
-  sprite: /Textures/_Trauma/Tiles/dark_mono.png # Trauma
+  sprite: /Textures/Tiles/dark_mono.png
   variants: 4
+  placementVariants:
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
   footstepSounds:
     collection: FootstepTile
   itemDrop: FloorTileItemDarkMono
@@ -406,8 +580,13 @@
   id: FloorDarkPavementVertical
   parent: BaseStationTile
   name: tiles-dark-floor-pavement-vertical
-  sprite: /Textures/_Trauma/Tiles/dark_pavement_vertical.png # Trauma
+  sprite: /Textures/Tiles/dark_pavement_vertical.png
   variants: 4
+  placementVariants:
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
   footstepSounds:
     collection: FootstepTile
   itemDrop: FloorTileItemDarkPavementVertical
@@ -417,8 +596,13 @@
   id: FloorDarkHerringbone
   parent: BaseStationTile
   name: tiles-dark-floor-herringbone
-  sprite: /Textures/_Trauma/Tiles/dark_herringbone.png # Trauma
+  sprite: /Textures/Tiles/dark_herringbone.png
   variants: 4
+  placementVariants:
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
   footstepSounds:
     collection: FootstepTile
   itemDrop: FloorTileItemDarkHerringbone
@@ -428,8 +612,13 @@
   id: FloorDarkDiagonalMini
   parent: BaseStationTile
   name: tiles-dark-floor-diagonal-mini
-  sprite: /Textures/_Trauma/Tiles/dark_diagonal_mini.png # Trauma
+  sprite: /Textures/Tiles/dark_diagonal_mini.png
   variants: 4
+  placementVariants:
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
   footstepSounds:
     collection: FootstepTile
   itemDrop: FloorTileItemDarkDiagonalMini
@@ -439,18 +628,23 @@
   id: FloorDarkPlastic
   parent: BaseStationTile
   name: tiles-plastic-dark-floor
-  sprite: /Textures/_Trauma/Tiles/dark_plastic.png # Trauma
+  sprite: /Textures/Tiles/dark_plastic.png
   variants: 4
+  placementVariants:
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
   footstepSounds:
     collection: FootstepTile
-  itemDrop: FloorTileItemPlasticDark # Trauma - plastic tile items
+  itemDrop: FloorTileItemPlasticDark - plastic tile items
   tileRipResistance: 50 # Goob
 
 - type: tile
   id: FloorTechMaint
   parent: BaseStationTile
   name: tiles-techmaint-floor
-  sprite: /Textures/_Trauma/Tiles/tech_maint.png # Trauma
+  sprite: /Textures/Tiles/tech_maint.png
   footstepSounds:
     collection: FootstepHull
   itemDrop: FloorTileItemTechmaint
@@ -460,7 +654,7 @@
   id: FloorTechMaintDark
   parent: BaseStationTile
   name: tiles-techmaint-floor-dark
-  sprite: /Textures/_Trauma/Tiles/tech_maint_dark.png # Trauma
+  sprite: /Textures/Tiles/tech_maint_dark.png
   footstepSounds:
     collection: FootstepHull
   itemDrop: FloorTileItemTechmaintDark
@@ -470,7 +664,7 @@
   id: FloorReinforced
   parent: BaseStationTile
   name: tiles-reinforced-floor
-  sprite: /Textures/_Trauma/Tiles/reinforced.png # Trauma
+  sprite: /Textures/Tiles/reinforced.png
   footstepSounds:
     collection: FootstepHull
   itemDrop: PartRodMetal1
@@ -501,7 +695,12 @@
   parent: BaseStationTile
   name: tiles-dirty-steel-floor
   sprite: /Textures/Tiles/steel_dirty.png
-  #variants: 4 # Trauma - no
+  #variants: 4 - no
+  ##placementVariants:
+  #- 1.0
+  #- 1.0
+  #- 1.0
+  #- 1.0
   footstepSounds:
     collection: FootstepPlating
   itemDrop: FloorTileItemDirty
@@ -550,6 +749,11 @@
   name: tiles-lime-floor
   sprite: /Textures/Tiles/lime.png
   variants: 4
+  placementVariants:
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
   itemDrop: FloorTileItemLime
 
 - type: tile
@@ -613,8 +817,13 @@
   id: FloorBar
   parent: BaseStationTile
   name: tiles-bar-floor
-  sprite: /Textures/_Trauma/Tiles/bar.png # Trauma
+  sprite: /Textures/Tiles/bar.png
   variants: 4
+  placementVariants:
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
   itemDrop: FloorTileItemBar
   tileRipResistance: 100 # Goob
 
@@ -630,7 +839,7 @@
   id: FloorMime
   parent: BaseStationTile
   name: tiles-mime-floor
-  sprite: /Textures/_Trauma/Tiles/mime.png # Trauma
+  sprite: /Textures/Tiles/mime.png
   itemDrop: FloorTileItemMime
   tileRipResistance: 50 # Goob
 
@@ -658,8 +867,14 @@
   id: FloorSteelDamaged
   parent: BaseStationTile
   name: tiles-steel-floor
-  sprite: /Textures/_Trauma/Tiles/steel_damaged.png # Trauma
+  sprite: /Textures/Tiles/steel_damaged.png
   variants: 5
+  placementVariants:
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
   itemDrop: FloorTileItemSteel #This should probably be made null when it becomes possible to make it such, in SS13 prying destroyed tiles wouldn't give you anything.
   tileRipResistance: 175 # Goob
 
@@ -670,6 +885,11 @@
   name: tiles-concrete-tile
   sprite: /Textures/Tiles/Planet/Concrete/concrete.png
   variants: 4
+  placementVariants:
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
   footstepSounds:
     collection: FootstepTile
   itemDrop: FloorTileItemConcrete
@@ -681,6 +901,11 @@
   name: tiles-concrete-slab
   sprite: /Textures/Tiles/Planet/Concrete/concrete_mono.png
   variants: 4
+  placementVariants:
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
   footstepSounds:
     collection: FootstepTile
   itemDrop: FloorTileItemConcreteMono
@@ -692,6 +917,11 @@
   name: tiles-concrete-smooth
   sprite: /Textures/Tiles/Planet/Concrete/concrete_smooth.png
   variants: 4
+  placementVariants:
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
   footstepSounds:
     collection: FootstepTile
   itemDrop: FloorTileItemConcreteSmooth
@@ -703,6 +933,11 @@
   name: tiles-gray-concrete-tile
   sprite: /Textures/Tiles/Planet/Concrete/grayconcrete.png
   variants: 4
+  placementVariants:
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
   footstepSounds:
     collection: FootstepTile
   itemDrop: FloorTileItemGrayConcrete
@@ -714,6 +949,11 @@
   name: tiles-gray-concrete-slab
   sprite: /Textures/Tiles/Planet/Concrete/grayconcrete_mono.png
   variants: 4
+  placementVariants:
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
   footstepSounds:
     collection: FootstepTile
   itemDrop: FloorTileItemGrayConcreteMono
@@ -725,6 +965,11 @@
   name: tiles-gray-concrete-smooth
   sprite: /Textures/Tiles/Planet/Concrete/grayconcrete_smooth.png
   variants: 4
+  placementVariants:
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
   footstepSounds:
     collection: FootstepTile
   itemDrop: FloorTileItemGrayConcreteSmooth
@@ -736,6 +981,11 @@
   name: tiles-old-concrete-tile
   sprite: /Textures/Tiles/Planet/Concrete/oldconcrete.png
   variants: 4
+  placementVariants:
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
   footstepSounds:
     collection: FootstepTile
   itemDrop: FloorTileItemOldConcrete
@@ -747,6 +997,11 @@
   name: tiles-old-concrete-slab
   sprite: /Textures/Tiles/Planet/Concrete/oldconcrete_mono.png
   variants: 4
+  placementVariants:
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
   footstepSounds:
     collection: FootstepTile
   itemDrop: FloorTileItemOldConcreteMono
@@ -758,6 +1013,11 @@
   name: tiles-old-concrete-smooth
   sprite: /Textures/Tiles/Planet/Concrete/oldconcrete_smooth.png
   variants: 4
+  placementVariants:
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
   footstepSounds:
     collection: FootstepTile
   itemDrop: FloorTileItemOldConcreteSmooth
@@ -848,6 +1108,11 @@
   name: tiles-boxing-ring-floor
   sprite: /Textures/Tiles/boxing.png
   variants: 4
+  placementVariants:
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
   friction: 1.25
   itemDrop: FloorTileItemBoxing
   tileRipResistance: 50 # Goob
@@ -858,6 +1123,11 @@
   name: tiles-gym-floor
   sprite: /Textures/Tiles/gym.png
   variants: 4
+  placementVariants:
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
   friction: 1.25
   itemDrop: FloorTileItemGym
   tileRipResistance: 50 # Goob
@@ -869,6 +1139,11 @@
   name: tiles-white-shuttle-floor
   sprite: /Textures/Tiles/shuttlewhite.png
   variants: 4
+  placementVariants:
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
   itemDrop: FloorTileItemShuttleWhite
 
 - type: tile
@@ -876,7 +1151,12 @@
   parent: BaseStationTile
   name: tiles-grey-shuttle-floor
   sprite: /Textures/Tiles/shuttlegrey.png
-  #variants: 4 # Trauma - no
+  #variants: 4 - no
+  #placementVariants:
+  #- 1.0
+  #- 1.0
+  #- 1.0
+  #- 1.0
   itemDrop: FloorTileItemShuttleGrey
 
 - type: tile
@@ -884,7 +1164,12 @@
   parent: BaseStationTile
   name: tiles-black-shuttle-floor
   sprite: /Textures/Tiles/shuttleblack.png
-  #variants: 4 # Trauma - no
+  #variants: 4 - no
+  #placementVariants:
+  #- 1.0
+  #- 1.0
+  #- 1.0
+  #- 1.0
   itemDrop: FloorTileItemShuttleBlack
 
 - type: tile
@@ -893,6 +1178,11 @@
   name: tiles-blue-shuttle-floor
   sprite: /Textures/Tiles/shuttleblue.png
   variants: 4
+  placementVariants:
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
   itemDrop: FloorTileItemShuttleBlue
 
 - type: tile
@@ -901,6 +1191,11 @@
   name: tiles-orange-shuttle-floor
   sprite: /Textures/Tiles/shuttleorange.png
   variants: 4
+  placementVariants:
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
   itemDrop: FloorTileItemShuttleOrange
 
 - type: tile
@@ -908,7 +1203,12 @@
   parent: BaseStationTile
   name: tiles-purple-shuttle-floor
   sprite: /Textures/Tiles/shuttlepurple.png
-  #variants: 4 # Trauma - no
+  #variants: 4 - no
+  #placementVariants:
+  #- 1.0
+  #- 1.0
+  #- 1.0
+  #- 1.0
   itemDrop: FloorTileItemShuttlePurple
 
 - type: tile
@@ -916,7 +1216,12 @@
   parent: BaseStationTile
   name: tiles-red-shuttle-floor
   sprite: /Textures/Tiles/shuttlered.png
-  #variants: 4 # Trauma - no
+  #variants: 4 - no
+  #placementVariants:
+  #- 1.0
+  #- 1.0
+  #- 1.0
+  #- 1.0
   itemDrop: FloorTileItemShuttleRed
 
 
@@ -947,6 +1252,11 @@
   name: tiles-glass-floor
   sprite: /Textures/Tiles/glass.png
   variants: 4
+  placementVariants:
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
   footstepSounds:
     collection: FootstepTile
   itemDrop: SheetGlass1
@@ -958,6 +1268,11 @@
   name: tiles-reinforced-glass-floor
   sprite: /Textures/Tiles/rglass.png
   variants: 4
+  placementVariants:
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
   footstepSounds:
     collection: FootstepTile
   itemDrop: SheetRGlass1
@@ -968,6 +1283,9 @@
   parent: BaseStationTile
   name: tiles-metal-foam
   sprite: /Textures/Tiles/foammetal.png
+  variants: 1
+  placementVariants:
+  - 1.0
   footstepSounds:
     collection: FootstepHull
   itemDrop: SheetSteel1
@@ -1008,6 +1326,17 @@
   name: tiles-asphalt
   sprite: /Textures/Tiles/Planet/Concrete/asphalt.png
   variants: 10
+  placementVariants:
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
   baseTurf: FloorDirt
   isSubfloor: true
   footstepSounds:
@@ -1044,6 +1373,11 @@
   name: tiles-dark-grass-floor
   sprite: /Textures/Tiles/grassdark.png
   variants: 4
+  placementVariants:
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
   baseTurf: FloorDirt
   isSubfloor: true
   footstepSounds:
@@ -1056,6 +1390,11 @@
   name: tiles-light-grass-floor
   sprite: /Textures/Tiles/grasslight.png
   variants: 4
+  placementVariants:
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
   baseTurf: FloorDirt
   isSubfloor: true
   footstepSounds:
@@ -1068,6 +1407,11 @@
   name: tiles-dirt-floor
   sprite: /Textures/Tiles/dirt.png
   variants: 4
+  placementVariants:
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
   baseTurf: Plating
   isSubfloor: true
   footstepSounds:
@@ -1083,19 +1427,19 @@
   sprite: /Textures/Tiles/Asteroid/asteroid.png
   variants: 13
   placementVariants:
-  - 0.8
-  - 0.0166 #Should be roughly 20%.... I think??? I don't know dude, I'm just a YAML monkey.
-  - 0.0166
-  - 0.0166
-  - 0.0166
-  - 0.0166
-  - 0.0166
-  - 0.0166
-  - 0.0166
-  - 0.0166
-  - 0.0166
-  - 0.0116
-  - 0.0116
+    - 0.8
+    - 0.0166 #Should be roughly 20%.... I think??? I don't know dude, I'm just a YAML monkey.
+    - 0.0166
+    - 0.0166
+    - 0.0166
+    - 0.0166
+    - 0.0166
+    - 0.0166
+    - 0.0166
+    - 0.0166
+    - 0.0166
+    - 0.0116
+    - 0.0116
   baseTurf: Space
   isSubfloor: true
   footstepSounds:
@@ -1202,6 +1546,22 @@
   name: tiles-asteroid-ironsand-borderless
   sprite: /Textures/Tiles/Asteroid/ironsand.png
   variants: 15
+  placementVariants:
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
   baseTurf: Space
   isSubfloor: true
   footstepSounds:
@@ -1282,6 +1642,14 @@
   name: tiles-cave
   sprite: /Textures/Tiles/cave.png
   variants: 7
+  placementVariants:
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
   baseTurf: Space
   isSubfloor: true
   footstepSounds:
@@ -1293,6 +1661,15 @@
   name: tiles-cave-drought
   sprite: /Textures/Tiles/cavedrought.png
   variants: 8
+  placementVariants:
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
   baseTurf: Space
   isSubfloor: true
   footstepSounds:
@@ -1305,6 +1682,11 @@
   name: tiles-flesh-floor
   sprite: /Textures/Tiles/meat.png
   variants: 4
+  placementVariants:
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
   footstepSounds:
     collection: FootstepBlood
   itemDrop: FloorTileItemFlesh
@@ -1315,7 +1697,7 @@
   id: FloorTechMaint2
   parent: BaseStationTile
   name: tiles-techmaint2-floor
-  sprite: /Textures/_Trauma/Tiles/steel_maint.png # Trauma
+  sprite: /Textures/Tiles/steel_maint.png
   footstepSounds:
     collection: FootstepHull
   itemDrop: FloorTileItemSteelMaint
@@ -1327,6 +1709,11 @@
   name: tiles-techmaint3-floor
   sprite: /Textures/Tiles/grating_maint.png
   variants: 4
+  placementVariants:
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
   footstepSounds:
     collection: FootstepHull
   itemDrop: FloorTileItemGratingMaint
@@ -1336,8 +1723,13 @@
   id: FloorWoodTile
   parent: BaseStationTile
   name: tiles-wood2
-  sprite: /Textures/_Trauma/Tiles/wood_tile.png # Trauma
+  sprite: /Textures/Tiles/wood_tile.png
   variants: 4
+  placementVariants:
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
   footstepSounds:
     collection: FootstepWood
   barestepSounds:
@@ -1349,8 +1741,16 @@
   id: FloorBrokenWood
   parent: BaseStationTile
   name: tiles-wood3
-  sprite: /Textures/_Trauma/Tiles/wood_broken.png # Trauma
+  sprite: /Textures/Tiles/wood_broken.png
   variants: 7
+  placementVariants:
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
   footstepSounds:
     collection: FootstepWood
   barestepSounds:
@@ -1375,6 +1775,14 @@
   name: tiles-chromite
   sprite: /Textures/Tiles/chromite.png
   variants: 7
+  placementVariants:
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
   baseTurf: Space
   isSubfloor: true
   footstepSounds:
@@ -1405,11 +1813,16 @@
 
 # Grass
 - type: tile
-  parent: BaseStationTile
   id: FloorAstroGrass
+  parent: BaseStationTile
   name: tiles-astro-grass
   sprite: /Textures/Tiles/Planet/Grass/grass.png
   variants: 4
+  placementVariants:
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
   edgeSpritePriority: 1
   edgeSprites:
     SouthEast: /Textures/Tiles/Planet/Grass/single_edge.png
@@ -1420,98 +1833,109 @@
     East: /Textures/Tiles/Planet/Grass/double_edge.png
     North: /Textures/Tiles/Planet/Grass/double_edge.png
     West: /Textures/Tiles/Planet/Grass/double_edge.png
+  deconstructTools: [ Cutting ]
   footstepSounds:
     collection: FootstepGrass
   itemDrop: FloorTileItemAstroGrass
   tileRipResistance: 50 # Goob
 
 - type: tile
-  parent: [ BaseStationTile, FloorGrass ]
   id: FloorMowedAstroGrass
+  parent: [ BaseStationTile, FloorGrass ]
   name: tiles-mowed-astro-grass
-  footstepSounds:
-    collection: FootstepGrass
+  isSubfloor: false
+  deconstructTools: [ Cutting ]
   itemDrop: FloorTileItemMowedAstroGrass
   tileRipResistance: 50
 
 - type: tile
-  parent: [ BaseStationTile, FloorGrassJungle ]
   id: FloorJungleAstroGrass
+  parent: [ BaseStationTile, FloorGrassJungle ]
   name: tiles-jungle-astro-grass
-  footstepSounds:
-    collection: FootstepGrass
+  isSubfloor: false
+  deconstructTools: [ Cutting ]
   itemDrop: FloorTileItemJungleAstroGrass
   tileRipResistance: 50
 
 - type: tile
-  parent: [ BaseStationTile, FloorGrassDark ]
+  parent: FloorGrassDark
   id: FloorDarkAstroGrass
   name: tiles-dark-astro-grass
-  footstepSounds:
-    collection: FootstepGrass
+  baseTurf: Plating
+  isSubfloor: false
+  deconstructTools: [ Cutting ]
   itemDrop: FloorTileItemDarkAstroGrass
 
 - type: tile
-  parent: [ BaseStationTile, FloorGrassLight ]
+  parent: FloorGrassLight
   id: FloorLightAstroGrass
   name: tiles-light-astro-grass
-  footstepSounds:
-    collection: FootstepGrass
+  baseTurf: Plating
+  isSubfloor: false
+  deconstructTools: [ Cutting ]
   itemDrop: FloorTileItemLightAstroGrass
 
 # Ice
 - type: tile
-  parent: BaseStationTile
   id: FloorAstroIce
+  parent: BaseStationTile
   name: tiles-astro-ice
   sprite: /Textures/Tiles/Planet/Snow/ice.png
   friction: 0.05
   mobFriction: 0.05
   mobAcceleration: 0.1
-  footstepSounds: null
   itemDrop: FloorTileItemAstroIce
   tileRipResistance: 50
 
 - type: tile
-  parent: [ BaseStationTile, FloorSnow ]
   id: FloorAstroSnow
+  parent: [ BaseStationTile, FloorSnow ]
   name: tiles-astro-snow
-  footstepSounds:
-    collection: FootstepSnow
+  isSubfloor: false
+  deconstructTools: [ Prying ]
   itemDrop: FloorTileItemAstroSnow
   tileRipResistance: 50
 
 # Asteroid Sand
 - type: tile
-  parent: [ BaseStationTile, FloorAsteroidSand ]
   id: FloorAstroAsteroidSand
+  parent: [ BaseStationTile, FloorAsteroidSand ]
   name: tiles-astro-asteroid-sand
-  footstepSounds:
-    collection: FootstepAsteroid
+  isSubfloor: false
+  deconstructTools: [ Prying ]
   itemDrop: FloorTileItemAstroAsteroidSand
+  weather: false
 
 - type: tile
-  parent: [ BaseStationTile, FloorAsteroidSandBorderless ]
   id: FloorAstroAsteroidSandBorderless
+  parent: [ BaseStationTile, FloorAsteroidSandBorderless ]
   name: tiles-astro-asteroid-sand-borderless
-  footstepSounds:
-    collection: FootstepAsteroid
+  isSubfloor: false
+  deconstructTools: [ Prying ]
   itemDrop: FloorTileItemAstroAsteroidSand
+  weather: false
 
 - type: tile
-  parent: [ BaseStationTile, FloorDesert ]
+  parent: FloorDesert
   id: FloorDesertAstroSand
   name: tiles-desert-astro-sand
-  footstepSounds:
-    collection: FootstepAsteroid
+  baseTurf: Plating
+  isSubfloor: false
+  deconstructTools: [ Prying ]
   itemDrop: FloorTileItemDesertAstroSand
+  weather: false
 
 - type: tile
   id: FloorWoodLarge
   parent: BaseStationTile
   name: tiles-wood-large
-  sprite: /Textures/_Trauma/Tiles/wood_large.png # Trauma
+  sprite: /Textures/Tiles/wood_large.png
   variants: 4
+  placementVariants:
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
   footstepSounds:
     collection: FootstepWood
   barestepSounds:
@@ -1566,6 +1990,11 @@
   name: tiles-dark-squiggly
   sprite: /Textures/Tiles/dark_squiggly.png
   variants: 4
+  placementVariants:
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
   itemDrop: FloorTileItemDarkSquiggly
   allowRotationMirror: true
 
@@ -1584,6 +2013,15 @@
   name: tiles-white-marble
   sprite: /Textures/Tiles/white_marble.png
   variants: 8
+  placementVariants:
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
   footstepSounds:
     collection: FootstepTile
   friction: 0.8
@@ -1595,6 +2033,15 @@
   name: tiles-dark-marble
   sprite: /Textures/Tiles/dark_marble.png
   variants: 8
+  placementVariants:
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
   footstepSounds:
     collection: FootstepTile
   friction: 0.8
@@ -1606,6 +2053,15 @@
   name: tiles-plasma-marble
   sprite: /Textures/Tiles/plasmarble.png
   variants: 8
+  placementVariants:
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
   footstepSounds:
     collection: FootstepTile
   friction: 0.8
@@ -1617,6 +2073,15 @@
   name: tiles-uranium-marble
   sprite: /Textures/Tiles/uranium_marble.png
   variants: 8
+  placementVariants:
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
   footstepSounds:
     collection: FootstepTile
   friction: 0.8
