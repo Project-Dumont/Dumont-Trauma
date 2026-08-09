@@ -122,22 +122,6 @@
   - type: Sprite
     sprite: _Goobstation/Clothing/Hands/Modsuits/engineer.rsi
   - type: Insulated
-  - type: Fiber
-    fiberMaterial: fibers-modular
-    fiberColor: fibers-black
-  - type: FingerprintMask
-  - type: SealableClothing
-    sealUpPopup: sealable-clothing-seal-up-gauntlets
-    sealDownPopup: sealable-clothing-seal-down-gauntlets
-  - type: SealableClothingVisuals
-    spriteLayer: sealed
-    clothingVisuals:
-      gloves:
-      - state: equipped-HAND-sealed
-      gloves-resomi:
-      - state: equipped-HAND-sealed-resomi
-      gloves-vox:
-      - state: equipped-HAND-sealed-vox
   - type: Armor
     modifiers:
       coefficients:
@@ -156,22 +140,6 @@
   - type: Sprite
     sprite: _Goobstation/Clothing/Hands/Modsuits/atmostech.rsi
   - type: Insulated
-  - type: Fiber
-    fiberMaterial: fibers-modular
-    fiberColor: fibers-black
-  - type: FingerprintMask
-  - type: SealableClothing
-    sealUpPopup: sealable-clothing-seal-up-gauntlets
-    sealDownPopup: sealable-clothing-seal-down-gauntlets
-  - type: SealableClothingVisuals
-    spriteLayer: sealed
-    clothingVisuals:
-      gloves:
-      - state: equipped-HAND-sealed
-      gloves-resomi:
-      - state: equipped-HAND-sealed-resomi
-      gloves-vox:
-      - state: equipped-HAND-sealed-vox
   - type: Armor
     modifiers:
       coefficients:
@@ -209,35 +177,6 @@
   - type: Sprite
     sprite: _Goobstation/Clothing/Hands/Modsuits/captain.rsi
   - type: Insulated
-  - type: Clothing
-    equipSound: /Audio/Mecha/mechmove03.ogg
-    unequipSound: /Audio/Mecha/mechmove03.ogg
-    slots: [ gloves ]
-    clothingVisuals:
-        hands:
-        - state: equipped-HAND
-        hands-resomi:
-        - state: equipped-HAND-resomi
-  - type: DamageOnInteractProtection
-    damageProtection:
-      flatReductions:
-        Heat: 10
-  - type: Fiber
-    fiberMaterial: fibers-modular
-    fiberColor: fibers-black
-  - type: FingerprintMask
-  - type: SealableClothing
-    sealUpPopup: sealable-clothing-seal-up-gauntlets
-    sealDownPopup: sealable-clothing-seal-down-gauntlets
-  - type: SealableClothingVisuals
-    spriteLayer: sealed
-    clothingVisuals:
-      gloves:
-      - state: equipped-HAND-sealed
-      gloves-resomi:
-      - state: equipped-HAND-sealed-resomi
-      gloves-vox:
-      - state: equipped-HAND-sealed-vox
   - type: Armor
     modifiers:
       coefficients:

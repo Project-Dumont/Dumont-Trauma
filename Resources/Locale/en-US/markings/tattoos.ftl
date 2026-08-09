@@ -60,5 +60,3 @@ marking-TattooEyeshadowVoxLarge = Eyeshadow (Large)
 
 marking-TattooVoxTailRing-tattoo_vox_tail_ring = Tail Ring
 marking-TattooVoxTailRing = Tail Ring
-marking-TattooEyeVulpkaninLeft = Vulpkanin Left
-marking-TattooEyeVulpkaninRight = Vulpkanin Right

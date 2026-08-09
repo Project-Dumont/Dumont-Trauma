@@ -139,13 +139,6 @@
   name: head of security's bulwark modsuit control unit
   description: A robust modular HARDERsuit control module unit for the head of security.
   components:
-  - type: Appearance
-  - type: Clothing
-    clothingVisuals:
-      back:
-      - state: equipped-BACKPACK
-      back-resomi:
-      - state: equipped-BACKPACK-resomi
   - type: Sprite
     sprite: _Goobstation/Clothing/Back/Modsuits/headofsecurity.rsi
   - type: ToggleableClothing
@@ -156,13 +149,6 @@
       shoes: ClothingModsuitBootsHeadOfSecurity
   - type: Construction
     node: headofsecurity
-  - type: SealableClothingVisuals
-    spriteLayer: sealed
-    clothingVisuals:
-      back:
-      - state: equipped-BACKPACK-sealed
-      back-resomi:
-      - state: equipped-BACKPACK-sealed-resomi
 
 - type: entity
   parent: [ ClothingModsuitHeadOfSecurity, BaseModsuitBattery ]
@@ -205,13 +191,6 @@
       shoes: ClothingModsuitBootsEngineer
   - type: Construction
     node: engineer
-  - type: SealableClothingVisuals
-    spriteLayer: sealed
-    clothingVisuals:
-      back:
-      - state: equipped-BACKPACK-sealed
-      back-resomi:
-      - state: equipped-BACKPACK-sealed-resomi
 
 - type: entity
   parent: [ ClothingModsuitEngineer, BaseModsuitBattery ]
@@ -233,13 +212,6 @@
       shoes: ClothingModsuitBootsAtmostech
   - type: Construction
     node: atmostech
-  - type: SealableClothingVisuals
-    spriteLayer: sealed
-    clothingVisuals:
-      back:
-      - state: equipped-BACKPACK-sealed
-      back-resomi:
-      - state: equipped-BACKPACK-sealed-resomi
 
 - type: entity
   parent: [ ClothingModsuitAtmostech, BaseModsuitBattery ]
@@ -288,13 +260,6 @@
       shoes: ClothingModsuitBootsCaptain
   - type: Construction
     node: captain
-  - type: SealableClothingVisuals
-    spriteLayer: sealed
-    clothingVisuals:
-      back:
-      - state: equipped-BACKPACK-sealed
-      back-resomi:
-      - state: equipped-BACKPACK-sealed-resomi
 
 - type: entity
   parent: [ ClothingModsuitCaptain, BaseModsuitBattery ]

@@ -10,6 +10,7 @@
     {
       "name": "icon"
     },
+<<<<<<< HEAD
     {
       "name": "equipped-OUTERCLOTHING",
       "directions": 4
@@ -27,4 +28,23 @@
       "directions": 4
     }
   ]
+=======
+    "states": [
+        {
+            "name": "icon"
+        },
+        {
+            "name": "equipped-OUTERCLOTHING",
+            "directions": 4
+        },
+        {
+            "name": "inhand-left",
+            "directions": 4
+        },
+        {
+            "name": "inhand-right",
+            "directions": 4
+        }
+    ]
+>>>>>>> parent of eef9ccfe5f (Restoura as especies que o trauma tirou)
 }

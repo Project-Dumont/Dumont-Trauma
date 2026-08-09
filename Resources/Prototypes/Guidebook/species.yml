@@ -13,18 +13,10 @@
   - Vox
   # <Trauma>
   #- Vulpkanin
-  - Vulpkanin
-  # <Goob>
-  - Rodentia
   - IPC
-  - Resomi
-  - Oni
-  - Tajaran
-  - Chitinid
   - Plasmaman
   - Decapoid
   # </Trauma>
-  # </Goob>
 
 - type: guideEntry
   id: Arachnid
@@ -66,7 +58,8 @@
   name: species-name-vox
   text: "/ServerInfo/Guidebook/Mobs/Vox.xml"
 
-- type: guideEntry
-  id: Vulpkanin
-  name: species-name-vulpkanin
-  text: "/ServerInfo/Guidebook/Mobs/Vulpkanin.xml"
+# Trauma
+#- type: guideEntry
+#  id: Vulpkanin
+#  name: species-name-vulpkanin
+#  text: "/ServerInfo/Guidebook/Mobs/Vulpkanin.xml"

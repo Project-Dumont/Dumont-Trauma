@@ -3,9 +3,7 @@
 - type: latheRecipePack
   id: Translators
   recipes:
-  - CanilunztTranslator
   - BubblishTranslator
-  - NekomimeticTranslator
   - DraconicTranslator
   - SolCommonTranslator
   - RootSpeakTranslator
@@ -13,31 +11,16 @@
   - XenoTranslator
   - AnimalTranslator
   - NewKinPidginTranslator
-  - ChittinTranslator
-  - SiikMaasTranslator
-  - MarishTranslator
-  - NewKinPidginTranslator
-  - SchechiTranslator
-  - GruntishTranslator
 
 - type: latheRecipePack
   id: TranslatorImplanters
   recipes:
   - BasicGalaticCommonTranslatorImplanter
   - AdvancedGalaticCommonTranslatorImplanter
-  - CanilunztTranslatorImplanter
   - BubblishTranslatorImplanter
-  - NekomimeticTranslatorImplanter
   - DraconicTranslatorImplanter
   - SolCommonTranslatorImplanter
   - RootSpeakTranslatorImplanter
   - MofficTranslatorImplanter
   - ChevalTranslatorImplanter
   - NewKinPidginTranslatorImplanter
-  - ChittinTranslatorImplanter
-  - SiikMaasTranslatorImplanter
-  - MarishTranslatorImplanter
-  - ChevalTranslatorImplanter
-  - NewKinPidginTranslatorImplanter
-  - SchechiTranslatorImplanter
-  - GruntishTranslatorImplanter

@@ -10,10 +10,6 @@
   requirements: # Trauma
   - !type:AgeRequirement
     requiredAge: 21
-  - !type:SpeciesRequirement # Goob - None Felinid
-    inverted: true
-    species:
-    - Felinid
   accessGroups:
   - AllAccess
   access:

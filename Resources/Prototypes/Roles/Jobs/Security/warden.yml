@@ -10,11 +10,6 @@
     - !type:DepartmentTimeRequirement
       department: Security
       time: 10h
-    - !type:SpeciesRequirement # Goob - None Felinid
-      inverted: true
-      species:
-      - Felinid
-  weight: 5
   startingGear: WardenGear
   icon: "JobIconWarden"
   supervisors: job-supervisors-hos
@@ -36,7 +31,8 @@
   # <Trauma>
   - !type:OrganChipsSpecial
     chips:
-    - SkillChipWarden
+    - SkillChipCombatEducation
+    - SkillChipLaser
   - !type:AddComponentSpecial
     components:
     - type: SecurityStaff

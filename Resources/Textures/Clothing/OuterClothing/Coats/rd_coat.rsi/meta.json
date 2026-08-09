@@ -1,7 +1,11 @@
 {
     "version": 1,
     "license": "CC-BY-SA-3.0",
+<<<<<<< HEAD
     "copyright": "Taken from tgstation at commit https://github.com/tgstation/tgstation/commit/6b3586226fcfc1ffafb7bf7d19b30ff55c695536",
+=======
+    "copyright": "Drawn by Ubaser",
+>>>>>>> parent of eef9ccfe5f (Restoura as especies que o trauma tirou)
     "size": {
         "x": 32,
         "y": 32
@@ -19,14 +23,6 @@
         },
         {
             "name": "open-equipped-OUTERCLOTHING",
-            "directions": 4
-        },
-        {
-            "name": "equipped-OUTERCLOTHING-resomi",
-            "directions": 4
-        },
-        {
-            "name": "open-equipped-OUTERCLOTHING-resomi",
             "directions": 4
         },
         {

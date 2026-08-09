@@ -43,8 +43,6 @@
       - state: equipped-OUTERCLOTHING-sealed
       outerClothing-vox:
       - state: equipped-OUTERCLOTHING-sealed-vox
-      outerClothing-resomi:
-      - state: equipped-OUTERCLOTHING-sealed-resomi   
   - type: Armor
     coverage:
     - Torso
@@ -91,32 +89,6 @@
   components:
   - type: Sprite
     sprite: _Goobstation/Clothing/OuterClothing/Modsuits/security.rsi
-    layers:
-    - state: chestplate
-    - state: chestplate-sealed
-      visible: false
-      map: [ "sealed" ]
-  - type: Clothing
-    equipSound: /Audio/Mecha/mechmove03.ogg
-    unequipSound: /Audio/Mecha/mechmove03.ogg
-    slots: [ outerClothing ]
-  - type: ClothingSpeedModifier
-    walkModifier: 0.8
-    sprintModifier: 0.8
-  - type: SealableClothing
-    sealUpPopup: sealable-clothing-seal-up-chestplate
-    sealDownPopup: sealable-clothing-seal-down-chestplate
-  - type: SealableClothingVisuals
-    spriteLayer: sealed
-    clothingVisuals:
-      outerClothing:
-      - state: equipped-OUTERCLOTHING-sealed
-      outerClothing-resomi:
-      - state: equipped-OUTERCLOTHING-sealed-resomi
-      outerClothing-vox:
-      - state: equipped-OUTERCLOTHING-sealed-vox
-  - type: ExplosionResistance
-    damageCoefficient: 0.4
   - type: ModifyDelayedKnockdown
     delayDelta: 2.5
     knockdownTimeDelta: -2.5
@@ -146,32 +118,6 @@
   components:
   - type: Sprite
     sprite: _Goobstation/Clothing/OuterClothing/Modsuits/headofsecurity.rsi
-    layers:
-    - state: chestplate
-    - state: chestplate-sealed
-      visible: false
-      map: [ "sealed" ]
-  - type: Clothing
-    equipSound: /Audio/Mecha/mechmove03.ogg
-    unequipSound: /Audio/Mecha/mechmove03.ogg
-    slots: [ outerClothing ]
-  - type: ClothingSpeedModifier
-    walkModifier: 0.80
-    sprintModifier: 0.80
-  - type: SealableClothing
-    sealUpPopup: sealable-clothing-seal-up-chestplate
-    sealDownPopup: sealable-clothing-seal-down-chestplate
-  - type: SealableClothingVisuals
-    spriteLayer: sealed
-    clothingVisuals:
-      outerClothing:
-      - state: equipped-OUTERCLOTHING-sealed
-      outerClothing-resomi:
-      - state: equipped-OUTERCLOTHING-sealed-resomi
-      outerClothing-vox:
-      - state: equipped-OUTERCLOTHING-sealed-vox     
-  - type: ExplosionResistance
-    damageCoefficient: 0.4
   - type: ModifyDelayedKnockdown
     delayDelta: 3
     knockdownTimeDelta: -3
@@ -210,20 +156,6 @@
   - type: ClothingSpeedModifier
     walkModifier: 0.85
     sprintModifier: 0.85
-  - type: SealableClothing
-    sealUpPopup: sealable-clothing-seal-up-chestplate
-    sealDownPopup: sealable-clothing-seal-down-chestplate
-  - type: SealableClothingVisuals
-    spriteLayer: sealed
-    clothingVisuals:
-      outerClothing:
-      - state: equipped-OUTERCLOTHING-sealed
-      outerClothing-resomi:
-      - state: equipped-OUTERCLOTHING-sealed-resomi
-      outerClothing-vox:
-      - state: equipped-OUTERCLOTHING-sealed-vox     
-  - type: ExplosionResistance
-    damageCoefficient: 0.85
   - type: Armor
     modifiers:
       coefficients:
@@ -249,20 +181,6 @@
   - type: ClothingSpeedModifier
     walkModifier: 0.75
     sprintModifier: 0.75
-  - type: SealableClothing
-    sealUpPopup: sealable-clothing-seal-up-chestplate
-    sealDownPopup: sealable-clothing-seal-down-chestplate
-  - type: SealableClothingVisuals
-    spriteLayer: sealed
-    clothingVisuals:
-      outerClothing:
-      - state: equipped-OUTERCLOTHING-sealed
-      outerClothing-resomi:
-      - state: equipped-OUTERCLOTHING-sealed-resomi
-      outerClothing-vox:
-      - state: equipped-OUTERCLOTHING-sealed-vox     
-  - type: ExplosionResistance
-    damageCoefficient: 0.35
   - type: Armor
     modifiers:
       coefficients:
@@ -290,20 +208,6 @@
   - type: ClothingSpeedModifier
     walkModifier: 0.75
     sprintModifier: 0.75
-  - type: SealableClothing
-    sealUpPopup: sealable-clothing-seal-up-chestplate
-    sealDownPopup: sealable-clothing-seal-down-chestplate
-  - type: SealableClothingVisuals
-    spriteLayer: sealed
-    clothingVisuals:
-      outerClothing:
-      - state: equipped-OUTERCLOTHING-sealed
-      outerClothing-resomi:
-      - state: equipped-OUTERCLOTHING-sealed-resomi
-      outerClothing-vox:
-      - state: equipped-OUTERCLOTHING-sealed-vox     
-  - type: ExplosionResistance
-    damageCoefficient: 0.45
   - type: Armor
     modifiers:
       coefficients:
@@ -337,20 +241,6 @@
   - type: ClothingSpeedModifier
     walkModifier: 0.75
     sprintModifier: 0.75
-  - type: SealableClothing
-    sealUpPopup: sealable-clothing-seal-up-chestplate
-    sealDownPopup: sealable-clothing-seal-down-chestplate
-  - type: SealableClothingVisuals
-    spriteLayer: sealed
-    clothingVisuals:
-      outerClothing:
-      - state: equipped-OUTERCLOTHING-sealed
-      outerClothing-resomi:
-      - state: equipped-OUTERCLOTHING-sealed-resomi
-      outerClothing-vox:
-      - state: equipped-OUTERCLOTHING-sealed-vox     
-  - type: ExplosionResistance
-    damageCoefficient: 0.1
   - type: Armor
     modifiers:
       coefficients:
@@ -376,32 +266,6 @@
   components:
   - type: Sprite
     sprite: _Goobstation/Clothing/OuterClothing/Modsuits/captain.rsi
-    layers:
-    - state: chestplate
-    - state: chestplate-sealed
-      visible: false
-      map: [ "sealed" ]
-  - type: Clothing
-    equipSound: /Audio/Mecha/mechmove03.ogg
-    unequipSound: /Audio/Mecha/mechmove03.ogg
-    slots: [ outerClothing ]
-  - type: ClothingSpeedModifier
-    walkModifier: 0.8
-    sprintModifier: 0.8
-  - type: SealableClothing
-    sealUpPopup: sealable-clothing-seal-up-chestplate
-    sealDownPopup: sealable-clothing-seal-down-chestplate
-  - type: SealableClothingVisuals
-    spriteLayer: sealed
-    clothingVisuals:
-      outerClothing:
-      - state: equipped-OUTERCLOTHING-sealed
-      outerClothing-resomi:
-      - state: equipped-OUTERCLOTHING-sealed-resomi
-      outerClothing-vox:
-      - state: equipped-OUTERCLOTHING-sealed-vox     
-  - type: ExplosionResistance
-    damageCoefficient: 0.5
   - type: Armor
     traumaDeductions:
       Dismemberment: 0.3
