@@ -1,5 +1,9 @@
 # SPDX-License-Identifier: AGPL-3.0-or-later
 
 - type: metabolizerType
+  id: Shadowkin
+  name: metabolizer-type-shadowkin
+
+- type: metabolizerType
   id: Plasmaman
-  name: metabolizer-type-plasmaman
+  name: metabolizer-type-plasmaman

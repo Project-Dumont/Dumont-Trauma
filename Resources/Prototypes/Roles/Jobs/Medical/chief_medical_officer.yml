@@ -13,6 +13,11 @@
     - !type:DepartmentTimeRequirement
       department: Medical
       time: 10h
+    - !type:SpeciesRequirement # Goob - None Felinid
+      inverted: true
+      species:
+      - Felinid
+  weight: 10
   startingGear: CMOGear
   icon: "JobIconChiefMedicalOfficer"
   supervisors: job-supervisors-captain
@@ -36,9 +41,7 @@
   # <Trauma>
   - !type:OrganChipsSpecial
     chips:
-    - SkillChipCMO
-    - SkillChipPistol
-    - SkillChipEchelonEducation
+    - SkillChipChiefMedicalOfficer
   # </Trauma>
   - !type:AddImplantSpecial
     implants: [ MindShieldImplant ]

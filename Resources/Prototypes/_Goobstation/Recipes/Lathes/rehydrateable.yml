@@ -17,6 +17,14 @@
     Plasma: 250
 
 - type: latheRecipe
+  id: FelinidCube
+  result: FelinidCube
+  completetime: 30
+  materials:
+    Biomass: 70
+    Plasma: 250
+
+- type: latheRecipe
   id: GingerbreadCube
   result: GingerbreadCube
   completetime: 30
@@ -41,8 +49,32 @@
     Plasma: 250
 
 - type: latheRecipe
+  id: RodentiaCube
+  result: RodentiaCube
+  completetime: 30
+  materials:
+    Biomass: 70
+    Plasma: 250
+
+- type: latheRecipe
   id: ReptilianCube
   result: ReptilianCube
+  completetime: 30
+  materials:
+    Biomass: 70
+    Plasma: 250
+
+- type: latheRecipe
+  id: TajaranCube
+  result: TajaranCube
+  completetime: 30
+  materials:
+    Biomass: 70
+    Plasma: 250
+
+- type: latheRecipe
+  id: VulpkaninCube
+  result: VulpkaninCube
   completetime: 30
   materials:
     Biomass: 70
@@ -59,6 +91,22 @@
 - type: latheRecipe
   id: VoxCube
   result: VoxCube
+  completetime: 30
+  materials:
+    Biomass: 70
+    Plasma: 250
+
+- type: latheRecipe
+  id: ShadowkinCube
+  result: ShadowkinCube
+  completetime: 30
+  materials:
+    Biomass: 70
+    Plasma: 250
+
+- type: latheRecipe
+  id: ChitinidCube
+  result: ChitinidCube
   completetime: 30
   materials:
     Biomass: 70

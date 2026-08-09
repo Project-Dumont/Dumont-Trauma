@@ -298,6 +298,7 @@
   available: false
   whitelist:
     tags: # Goob - tags replacing components
+    - FelinidEmotes
     - VulpEmotes
   blacklist:
     tags:

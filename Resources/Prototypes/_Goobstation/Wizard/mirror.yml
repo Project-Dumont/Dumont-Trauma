@@ -20,20 +20,27 @@
     - Reptilian
     - SlimePerson
     - Diona
+    - Vulpkanin
+    - Felinid
+    - Rodentia
+    - Oni
     - Arachnid
     - Moth
     - Gingerbread
     - Vox
     - Dwarf
+    - Resomi
     - IPC
     - BananaMen
     - Kobold
     - Monkey
+    - Tajaran
+    - Shadowkin
+    - Chitinid
   - type: ActivatableUI
     key: enum.WizardMirrorUiKey.Key
     singleUser: true
   - type: UserInterface
     interfaces:
       enum.WizardMirrorUiKey.Key:
-        type: WizardMirrorBoundUserInterface
   - type: ReflectiveSurface # Goob

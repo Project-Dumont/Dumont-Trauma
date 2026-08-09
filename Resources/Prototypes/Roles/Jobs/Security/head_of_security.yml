@@ -16,6 +16,16 @@
     - !type:DepartmentTimeRequirement
       department: Security
       time: 10h
+    - !type:SpeciesRequirement # Goob - None Felinid
+      inverted: true
+      species:
+      - Felinid
+  #  - !type:StyleRequirement
+  #    styles:
+  #    - HumanHairFloorlengthBedhead
+  #    - HumanHairClassicFloorlengthBedhead
+  #    - HumanHairFloorlengthBraid
+  weight: 10
   startingGear: HoSGear
   icon: "JobIconHeadOfSecurity"
   supervisors: job-supervisors-captain
@@ -39,8 +49,7 @@
   # <Trauma>
   - !type:OrganChipsSpecial
     chips:
-    - SkillChipCombatEducation
-    - SkillChipCombatHOS
+    - SkillChipHeadOfSecurity
   # </Trauma>
   - !type:AddImplantSpecial
     implants: [ MindShieldImplant ]
@@ -71,6 +80,5 @@
   job: HeadOfSecurity
   hasMindShield: true
   equipment:
-    head: ClothingHeadHatBeretHoS
     mask: ClothingMaskGasSecurity
     neck: ClothingNeckCloakHos

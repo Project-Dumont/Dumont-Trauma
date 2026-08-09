@@ -461,6 +461,8 @@
   - type: EmagLatheRecipes
     emagStaticPacks:
     - HostileCubesStatic
+    # Goobstation Packs
+    - EmagCubesStatic
 
 - type: entity
   id: SecurityTechFab

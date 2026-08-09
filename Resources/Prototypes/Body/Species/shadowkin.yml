@@ -1,0 +1,130 @@
+- type: markingsGroup
+  parent: Human
+  id: Shadowkin
+  limits:
+    enum.HumanoidVisualLayers.Tail:
+      limit: 1
+      required: false
+      default: [ TailShadowkin ]
+    enum.HumanoidVisualLayers.HeadTop:
+      limit: 2
+      required: false
+      default: [ EarsShadowkin ]
+  appearances:
+    enum.HumanoidVisualLayers.Tail:
+      matchSkin: true
+    enum.HumanoidVisualLayers.HeadTop:
+      matchSkin: true
+
+- type: entity
+  parent: AppearanceHuman
+  id: AppearanceShadowkin
+  categories: [ HideSpawnMenu ]
+  name: shadowkin appearance
+  components:
+  - type: InitialBody
+    organs:
+      Torso: OrganShadowkinTorso
+      Head: OrganShadowkinHead
+      Tail: OrganShadowkinTail
+      ArmLeft: OrganShadowkinArmLeft
+      ArmRight: OrganShadowkinArmRight
+      HandRight: OrganShadowkinHandRight
+      HandLeft: OrganShadowkinHandLeft
+      LegLeft: OrganShadowkinLegLeft
+      LegRight: OrganShadowkinLegRight
+      FootLeft: OrganShadowkinFootLeft
+      FootRight: OrganShadowkinFootRight
+      Brain: OrganHumanBrain
+      Eyes: OrganHumanEyes
+      Tongue: OrganHumanTongue
+      Appendix: OrganHumanAppendix
+      Ears: OrganHumanEars
+      Lungs: OrganHumanLungs
+      Heart: OrganHumanHeart
+      Stomach: OrganHumanStomach
+      Liver: OrganHumanLiver
+      Kidneys: OrganHumanKidneys
+  - type: HumanoidProfile
+    species: Shadowkin
+
+- type: entity
+  parent: OrganHuman
+  id: OrganShadowkinExternal
+  abstract: true
+  components:
+  - type: Sprite
+    sprite: _EinsteinEngines/Mobs/Species/Shadowkin/parts.rsi
+  - type: VisualOrgan
+    data:
+      sprite: _EinsteinEngines/Mobs/Species/Shadowkin/parts.rsi
+  - type: VisualOrganMarkings
+    markingData:
+      group: Shadowkin
+
+- type: entity
+  parent: [ OrganBaseTorsoSexed, OrganBaseTorsoTailed, OrganShadowkinExternal ]
+  id: OrganShadowkinTorso
+  components:
+  - type: Sprite
+    state: torso_m
+  - type: VisualOrgan
+    data:
+      sprite: _EinsteinEngines/Mobs/Species/Shadowkin/parts.rsi
+      state: torso_m
+    sexStateOverrides:
+      Male: torso_m
+      Female: torso_f
+
+- type: entity
+  parent: [ OrganBaseHeadSexed, OrganBaseHead, OrganShadowkinExternal ]
+  id: OrganShadowkinHead
+  components:
+  - type: VisualOrganMarkings
+    hideableLayers:
+    - enum.HumanoidVisualLayers.Hair
+    - enum.HumanoidVisualLayers.Snout
+
+- type: entity
+  parent: [ OrganBaseTail, OrganShadowkinExternal ]
+  id: OrganShadowkinTail
+  components:
+  - type: Sprite
+    sprite: _Trauma/empty.rsi
+    state: empty
+  - type: VisualOrgan
+    data:
+      sprite: _Trauma/empty.rsi
+      state: empty
+
+- type: entity
+  parent: [ OrganBaseArmLeft, OrganShadowkinExternal ]
+  id: OrganShadowkinArmLeft
+
+- type: entity
+  parent: [ OrganBaseArmRight, OrganShadowkinExternal ]
+  id: OrganShadowkinArmRight
+
+- type: entity
+  parent: [ OrganBaseHandLeft, OrganShadowkinExternal ]
+  id: OrganShadowkinHandLeft
+
+- type: entity
+  parent: [ OrganBaseHandRight, OrganShadowkinExternal ]
+  id: OrganShadowkinHandRight
+
+- type: entity
+  parent: [ OrganBaseLegLeft, OrganShadowkinExternal ]
+  id: OrganShadowkinLegLeft
+
+- type: entity
+  parent: [ OrganBaseLegRight, OrganShadowkinExternal ]
+  id: OrganShadowkinLegRight
+
+- type: entity
+  parent: [ OrganBaseFootLeft, OrganShadowkinExternal ]
+  id: OrganShadowkinFootLeft
+
+- type: entity
+  parent: [ OrganBaseFootRight, OrganShadowkinExternal ]
+  id: OrganShadowkinFootRight

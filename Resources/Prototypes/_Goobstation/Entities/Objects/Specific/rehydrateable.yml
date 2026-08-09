@@ -20,6 +20,15 @@
 
 - type: entity
   parent: MonkeyCube
+  id: FelinidCube
+  name: felinid cube
+  components:
+  - type: Rehydratable
+    possibleSpawns:
+    - MobFelinidRandom
+
+- type: entity
+  parent: MonkeyCube
   id: GingerbreadCube
   name: gingerbread cube
   components:
@@ -47,12 +56,30 @@
 
 - type: entity
   parent: MonkeyCube
+  id: RodentiaCube
+  name: rodentia cube
+  components:
+  - type: Rehydratable
+    possibleSpawns:
+    - MobRodentiaRandom
+
+- type: entity
+  parent: MonkeyCube
   id: ReptilianCube
   name: reptilian person cube
   components:
   - type: Rehydratable
     possibleSpawns:
     - MobReptilianRandom
+
+- type: entity
+  parent: MonkeyCube
+  id: VulpkaninCube
+  name: vulpkanin cube
+  components:
+  - type: Rehydratable
+    possibleSpawns:
+    - MobVulpkaninRandom
 
 - type: entity
   parent: MonkeyCube
@@ -65,9 +92,36 @@
 
 - type: entity
   parent: MonkeyCube
+  id: TajaranCube
+  name: tajaran cube
+  components:
+  - type: Rehydratable
+    possibleSpawns:
+    - MobTajaranRandom
+
+- type: entity
+  parent: MonkeyCube
   id: VoxCube
   name: vox cube
   components:
   - type: Rehydratable
     possibleSpawns:
     - MobVoxRandom
+
+- type: entity
+  parent: MonkeyCube
+  id: ShadowkinCube
+  name: Shadowkin cube
+  components:
+  - type: Rehydratable
+    possibleSpawns:
+    - MobShadowkinRandom
+
+- type: entity
+  parent: MonkeyCube
+  id: ChitinidCube
+  name: Chitinid cube
+  components:
+  - type: Rehydratable
+    possibleSpawns:
+    - MobChitinidRandom

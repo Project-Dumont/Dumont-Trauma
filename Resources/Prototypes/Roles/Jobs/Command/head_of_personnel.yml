@@ -19,11 +19,14 @@
     - !type:DepartmentTimeRequirement
       department: Command
       time: 2.5h
-  # <Trauma>
-  guides:
+    - !type:SpeciesRequirement # Goob - None Felinid
+      inverted: true
+      species:
+      - Felinid
+  guides: # goobstation
   - Command
   - Writing
-  # </Trauma>
+  weight: 20
   startingGear: HoPGear
   icon: "JobIconHeadOfPersonnel"
   supervisors: job-supervisors-captain
@@ -66,8 +69,7 @@
   # <Trauma>
   - !type:OrganChipsSpecial
     chips:
-    - SkillChipEchelonEducation
-    - SkillChipLaser
+    - SkillChipHeadOfPersonnel
   # </Trauma>
   - !type:AddImplantSpecial
     implants: [ MindShieldImplant ]

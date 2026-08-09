@@ -1,0 +1,59 @@
+- type: markingsGroup
+  parent: Human
+  id: Oni
+  limits:
+    enum.HumanoidVisualLayers.HeadTop:
+      limit: 1
+      required: false
+      default: [ OniHornAries ]
+
+- type: entity
+  parent: AppearanceHuman
+  id: AppearanceOni
+  categories: [ HideSpawnMenu ]
+  name: oni appearance
+  components:
+  - type: InitialBody
+    organs:
+      Torso: OrganHumanTorso
+      Head: OrganOniHead
+      ArmLeft: OrganHumanArmLeft
+      ArmRight: OrganHumanArmRight
+      HandRight: OrganHumanHandRight
+      HandLeft: OrganHumanHandLeft
+      LegLeft: OrganHumanLegLeft
+      LegRight: OrganHumanLegRight
+      FootLeft: OrganHumanFootLeft
+      FootRight: OrganHumanFootRight
+      Brain: OrganHumanBrain
+      Eyes: OrganHumanEyes
+      Tongue: OrganHumanTongue
+      Appendix: OrganHumanAppendix
+      Ears: OrganHumanEars
+      Lungs: OrganHumanLungs
+      Heart: OrganHumanHeart
+      Stomach: OrganHumanStomach
+      Liver: OrganHumanLiver
+      Kidneys: OrganHumanKidneys
+  - type: HumanoidProfile
+    species: Oni
+  - type: ScaleVisuals
+    scale: 1.2, 1.2
+
+- type: entity
+  parent: OrganHumanExternal
+  id: OrganOniExternal
+  abstract: true
+  components:
+  - type: VisualOrganMarkings
+    markingData:
+      group: Oni
+
+- type: entity
+  parent: [ OrganBaseHeadSexed, OrganBaseHead, OrganOniExternal ]
+  id: OrganOniHead
+  components:
+  - type: VisualOrganMarkings
+    hideableLayers:
+    - enum.HumanoidVisualLayers.Hair
+    - enum.HumanoidVisualLayers.Snout

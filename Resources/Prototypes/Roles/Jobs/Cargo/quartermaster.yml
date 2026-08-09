@@ -13,6 +13,11 @@
     - !type:DepartmentTimeRequirement
       department: Cargo
       time: 10h
+    - !type:SpeciesRequirement # Goob - None Felinid
+      inverted: true
+      species:
+      - Felinid
+  weight: 10
   startingGear: QuartermasterGear
   icon: "JobIconQuarterMaster"
   supervisors: job-supervisors-captain
@@ -33,9 +38,7 @@
   # <Trauma>
   - !type:OrganChipsSpecial
     chips:
-    - SkillChipEchelonEducation
-    - SkillChipUnarmed
-    - SkillChipMining
+    - SkillChipQuartermaster
   # </Trauma>
   - !type:AddImplantSpecial
     implants: [ MindShieldImplant ]

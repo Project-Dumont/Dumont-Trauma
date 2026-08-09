@@ -365,6 +365,9 @@
       outerClothing-vox:
       - state: equipped-OUTERCLOTHING-light-vox
         shader: unshaded
+      outerClothing-resomi:
+      - state: equipped-OUTERCLOTHING-light-resomi
+        shader: unshaded
   - type: ItemTogglePointLight
   - type: Appearance
   - type: HandheldLight

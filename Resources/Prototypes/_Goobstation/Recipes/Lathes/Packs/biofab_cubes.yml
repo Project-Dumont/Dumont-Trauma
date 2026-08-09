@@ -8,6 +8,16 @@
   - DionaCube
   - MothCube
   - DwarfCube
+#  - RodentiaCube # Trauma
   - ReptilianCube
+  - VulpkaninCube
   - SlimePersonCube
+#  - TajaranCube # Trauma
   - VoxCube
+  - ShadowkinCube
+#  - ChitinidCube # Trauma
+
+- type: latheRecipePack
+  id: EmagCubesStatic
+  recipes:
+  - FelinidCube

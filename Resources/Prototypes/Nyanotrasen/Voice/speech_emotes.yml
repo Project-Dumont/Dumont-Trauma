@@ -6,6 +6,7 @@
   icon: _Goobstation/Interface/Emotes/hiss.png
   whitelist:
     tags:
+    - FelinidEmotes
     - ReptilianEmotes
   blacklist:
     components:
@@ -16,3 +17,63 @@
     - hisses
     - hissing
     - hissed
+
+- type: emote
+  id: Meow
+  name: chat-emote-name-meow
+  category: Vocal
+  icon: _Goobstation/Interface/Emotes/meow.png
+  whitelist:
+    tags:
+    - FelinidEmotes
+  blacklist:
+    components:
+    - BorgChassis
+  chatMessages: [ chat-emote-msg-meow ]
+  chatTriggers:
+    - meow
+    - meows
+    - meowing
+    - meowed
+    - miau
+    - miaus
+    - nya
+    - nyas
+    - mraow
+    - mraows
+
+- type: emote
+  id: Mew
+  name: chat-emote-name-mew
+  category: Vocal
+  icon: _Goobstation/Interface/Emotes/mew.png
+  whitelist:
+    tags:
+    - FelinidEmotes
+  blacklist:
+    components:
+    - BorgChassis
+  chatMessages: [ chat-emote-msg-mew ]
+  chatTriggers:
+    - mew
+    - mews
+    - mewing
+    - mewed
+
+- type: emote
+  id: Purr
+  name: chat-emote-name-purr
+  category: Vocal
+  icon: _Goobstation/Interface/Emotes/purr.png
+  whitelist:
+    tags:
+    - FelinidEmotes
+  blacklist:
+    components:
+    - BorgChassis
+  chatMessages: [ chat-emote-msg-purr ]
+  chatTriggers:
+    - purr
+    - purrs
+    - purring
+    - purred

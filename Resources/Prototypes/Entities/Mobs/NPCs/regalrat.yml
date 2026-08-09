@@ -351,7 +351,11 @@
   - type: FireVisuals
     sprite: Mobs/Effects/onfire.rsi
     normalState: Mouse_burning
-
+  - type: FelinidFood # Nyanotrasen - Felinid, ability to eat rat, see Content.Server/Nyanotrasen/Abilities/Felinid/FelinidSystem.cs
+  - type: Edible
+    edible: Food
+  - type: Item
+    size: Tiny # Delta V - Make them edible and pickable.
 - type: entityTable
   id: RatKingLoot
   table: !type:GroupSelector

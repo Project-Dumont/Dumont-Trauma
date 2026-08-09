@@ -36,6 +36,22 @@
     - Silicon
     - BorgChassis
 
+- type: emote
+  id: Mars
+  name: chat-emote-name-mars
+  category: Vocal
+  whitelist:
+    tags:
+    - ShadowkinEmotes
+  blacklist:
+    components:
+    - BorgChassis
+  chatMessages: ["chat-emote-msg-mars"]
+  chatTriggers:
+    - mars
+    - marsing
+    - marsed
+
 - type: emoteSounds
   id: UnisexPlasmaman
   params:
@@ -44,4 +60,4 @@
     Scream:
       collection: PlasmamanUnisexScreams
   sound:
-    path: /Audio/Voice/Skeleton/skeleton_scream.ogg
+    path: /Audio/Voice/Skeleton/skeleton_scream.ogg

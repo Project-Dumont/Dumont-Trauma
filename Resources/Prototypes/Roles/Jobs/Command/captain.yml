@@ -19,10 +19,16 @@
     - !type:DepartmentTimeRequirement
       department: Command
       time: 4h
-  # <Trauma>
-  guides:
+    - !type:SpeciesRequirement # Goob - None Felinid
+      inverted: true
+      species:
+      - Felinid
+      #any MRP using our code might eventually want to use it
+    # - !type:SaturationRequirement # MisandryBox - no neon hair on captain
+    #   hairColorSaturation: 0.30
+  guides: # goobstation
   - Command
-  # </Trauma>
+  weight: 20
   startingGear: CaptainGear
   icon: "JobIconCaptain"
   joinNotifyCrew: true
@@ -33,9 +39,7 @@
   # <Trauma>
   - !type:OrganChipsSpecial
     chips:
-    - SkillChipEchelonEducation
-    - SkillChipLaser
-    - SkillChipLongBlade
+    - SkillChipCaptain
   # </Trauma>
   - !type:AddImplantSpecial
     implants: [ MindShieldImplant ]

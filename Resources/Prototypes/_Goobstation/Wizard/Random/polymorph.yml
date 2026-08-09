@@ -72,7 +72,14 @@
     MobVoxRandom: 1
     MobDwarfRandom: 1
     MobBananaMen: 1
+    MobRodentiaRandom: 1
+    MobVulpkaninRandom: 1
     MobIPCRandom: 1
+    MobFelinidRandom: 1 # le funny
+    MobTajaranRandom: 1
+    MobOniRandom: 1
+    MobChitinidRandom: 1
+    MobShadowkinRandom: 1
     MobAbductor: 0.1
     MobShadowling: 0.01
 

@@ -186,6 +186,9 @@
   id: EnergyMagAmmo
 
 - type: Tag
+  id: FelinidEmotes
+
+- type: Tag
   id: FitsInCharger
 
 - type: Tag
@@ -436,6 +439,9 @@
 
 - type: Tag
   id: NunHood
+
+- type: Tag
+  id: Oni # for oni shitcode
 
 - type: Tag
   id: Organ

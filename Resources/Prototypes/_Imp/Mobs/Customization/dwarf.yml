@@ -94,6 +94,14 @@
   - sprite: _Impstation/Mobs/Customization/Dwarf/head.rsi
     state: constellation
 
+- type: marking
+  id: DwarfHeadGlow
+  bodyPart: Head
+  forcedColoring: true
+  sprites:
+  - sprite: _Impstation/Mobs/Customization/Dwarf/head.rsi
+    state: glow
+
 
 # Snout
 

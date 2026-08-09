@@ -1,0 +1,133 @@
+- type: markingsGroup
+  parent: Human
+  id: Chitinid
+  limits:
+    enum.HumanoidVisualLayers.Head:
+      limit: 1
+      required: false
+    enum.HumanoidVisualLayers.Tail:
+      limit: 1
+      required: false
+      default: [ ChitinidWingsDefault ]
+    enum.HumanoidVisualLayers.HeadTop:
+      limit: 2
+      required: false
+      default: [ ChitinidAntennasDefault ]
+  appearances:
+    enum.HumanoidVisualLayers.Tail:
+      matchSkin: true
+    enum.HumanoidVisualLayers.HeadTop:
+      matchSkin: true
+
+- type: entity
+  parent: AppearanceHuman
+  id: AppearanceChitinid
+  categories: [ HideSpawnMenu ]
+  name: chitinid appearance
+  components:
+  - type: InitialBody
+    organs:
+      Torso: OrganChitinidTorso
+      Head: OrganChitinidHead
+      Tail: OrganChitinidTail
+      ArmLeft: OrganChitinidArmLeft
+      ArmRight: OrganChitinidArmRight
+      HandRight: OrganChitinidHandRight
+      HandLeft: OrganChitinidHandLeft
+      LegLeft: OrganChitinidLegLeft
+      LegRight: OrganChitinidLegRight
+      FootLeft: OrganChitinidFootLeft
+      FootRight: OrganChitinidFootRight
+      Brain: OrganHumanBrain
+      Eyes: OrganHumanEyes
+      Tongue: OrganHumanTongue
+      Appendix: OrganHumanAppendix
+      Ears: OrganHumanEars
+      Lungs: OrganHumanLungs
+      Heart: OrganHumanHeart
+      Stomach: OrganHumanStomach
+      Liver: OrganHumanLiver
+      Kidneys: OrganHumanKidneys
+  - type: HumanoidProfile
+    species: Chitinid
+
+- type: entity
+  parent: OrganHuman
+  id: OrganChitinidExternal
+  abstract: true
+  components:
+  - type: Sprite
+    sprite: _DV/Mobs/Species/Chitinid/parts.rsi
+  - type: VisualOrgan
+    data:
+      sprite: _DV/Mobs/Species/Chitinid/parts.rsi
+  - type: VisualOrganMarkings
+    markingData:
+      group: Chitinid
+
+- type: entity
+  parent: [ OrganBaseTorsoSexed, OrganBaseTorsoTailed, OrganChitinidExternal ]
+  id: OrganChitinidTorso
+  components:
+  - type: Sprite
+    state: torso_m
+  - type: VisualOrgan
+    data:
+      sprite: _DV/Mobs/Species/Chitinid/parts.rsi
+      state: torso_m
+    sexStateOverrides:
+      Male: torso_m
+      Female: torso_f
+
+- type: entity
+  parent: [ OrganBaseHeadSexed, OrganBaseHead, OrganChitinidExternal ]
+  id: OrganChitinidHead
+  components:
+  - type: VisualOrganMarkings
+    hideableLayers:
+    - enum.HumanoidVisualLayers.Hair
+    - enum.HumanoidVisualLayers.Snout
+
+- type: entity
+  parent: [ OrganBaseTail, OrganChitinidExternal ]
+  id: OrganChitinidTail
+  components:
+  - type: Sprite
+    sprite: _Trauma/empty.rsi
+    state: empty
+  - type: VisualOrgan
+    data:
+      sprite: _Trauma/empty.rsi
+      state: empty
+
+- type: entity
+  parent: [ OrganBaseArmLeft, OrganChitinidExternal ]
+  id: OrganChitinidArmLeft
+
+- type: entity
+  parent: [ OrganBaseArmRight, OrganChitinidExternal ]
+  id: OrganChitinidArmRight
+
+- type: entity
+  parent: [ OrganBaseHandLeft, OrganChitinidExternal ]
+  id: OrganChitinidHandLeft
+
+- type: entity
+  parent: [ OrganBaseHandRight, OrganChitinidExternal ]
+  id: OrganChitinidHandRight
+
+- type: entity
+  parent: [ OrganBaseLegLeft, OrganChitinidExternal ]
+  id: OrganChitinidLegLeft
+
+- type: entity
+  parent: [ OrganBaseLegRight, OrganChitinidExternal ]
+  id: OrganChitinidLegRight
+
+- type: entity
+  parent: [ OrganBaseFootLeft, OrganChitinidExternal ]
+  id: OrganChitinidFootLeft
+
+- type: entity
+  parent: [ OrganBaseFootRight, OrganChitinidExternal ]
+  id: OrganChitinidFootRight
